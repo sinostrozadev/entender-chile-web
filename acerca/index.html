@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="es"> <head><script>
+      // Diseño elegido por el visitante (1 sobrio, 2 portada, 3 sala de datos).
+      // Se aplica antes de pintar para que no haya parpadeo.
+      (function () {
+        try {
+          var d = localStorage.getItem("ec-diseno");
+          if (d === "2" || d === "3") document.documentElement.setAttribute("data-diseno", d);
+        } catch (e) {}
+      })();
+    </script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Acerca · Entender Chile</title><meta name="description" content="Las noticias de Chile explicadas cada mañana en diez minutos: qué pasó, por qué importa y de dónde sale cada dato."><meta property="og:title" content="Acerca · Entender Chile"><meta property="og:description" content="Las noticias de Chile explicadas cada mañana en diez minutos: qué pasó, por qué importa y de dónde sale cada dato."><meta property="og:type" content="article"><link rel="icon" href="/entender-chile-web/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/entender-chile-web/_astro/acerca.By1A-ru0.css"></head> <body> <header class="cab"> <a class="marca" href="/entender-chile-web/">Entender Chile</a> <span class="tagline">El resumen sin gritos</span> <nav> <a href="/entender-chile-web/informes/">Informes</a> <a href="/entender-chile-web/claves/">Claves</a> <a href="/entender-chile-web/en-que-quedo/">¿En qué quedó?</a> <a href="/entender-chile-web/acerca/" aria-current="page">Acerca</a>  <span class="selector-diseno" role="group" aria-label="Elegir diseño"> <span>Diseño</span> <button type="button" data-d="1" aria-pressed="true" title="Sobrio (actual)">1</button> <button type="button" data-d="2" aria-pressed="false" title="Portada">2</button> <button type="button" data-d="3" aria-pressed="false" title="Sala de datos">3</button> </span> </nav> </header> <main> <div class="acerca"> <p class="kicker">Acerca</p> <h1>Entender Chile</h1> <p class="lead">Un informe de noticias que sale cada mañana y se lee en unos diez minutos. Está hecho para alguien que trabaja, quiere saber qué pasa en el país y no tiene tiempo ni ganas de pelearse con un matinal.</p> <h2>Por qué lo hacemos así</h2> <p>Informarse se volvió caro. Caro en tiempo, porque hay que filtrar mucho ruido para llegar a lo que importa. Y caro en confianza, porque cada vez cuesta más saber qué es un hecho y qué es una opinión. Este informe intenta bajar los dos costos a la vez.</p> <ul> <li><strong>Elegimos poco y lo explicamos bien.</strong> Cada día hay tres o cuatro noticias que cambian algo de verdad; esas van a fondo. Lo demás cabe en un párrafo o en una línea, y lo que no aporta se queda fuera.</li> <li><strong>Cada cifra dice de dónde salió.</strong> Con su fuente y su fecha, al lado. Si no encontramos la fuente, el dato no se publica.</li> <li><strong>Los hechos van por un lado y las lecturas por otro.</strong> El contexto verificable se marca como <em>Contexto</em>. Cuando hay una interpretación nuestra, va aparte y se llama <em>Análisis</em>. Así siempre sabes qué estás leyendo.</li> <li><strong>La serie Claves explica lo que dura.</strong> Parte de una noticia del día y desarma el mecanismo que hay detrás: cómo funciona una AFP, qué es la UF, qué puede hacer un estado de excepción. Cuando vuelva a aparecer el tema, ya lo vas a entender solo.</li> </ul> <h2>Cómo se produce</h2> <p>Usamos herramientas automáticas para reunir y dar formato; qué entra y cómo se cuenta lo deciden personas, y cada edición se revisa antes de salir. Si un día nos equivocamos, corregimos y lo decimos.</p> <h2>Sin bandera</h2> <p>No tenemos partido ni candidato. Las posiciones políticas se atribuyen a quien las sostiene, y cuando un tema tiene lecturas en disputa, mostramos las dos.</p> <h2>El tono</h2> <p>Queremos sonar como alguien que te cuenta las cosas sin apuro: cercano, serio y sin engolar la voz. De ahí el nombre de esta página y del canal.</p> <p class="kicker" style="margin-top:2.5rem">El resumen sin gritos</p> </div> </main> <script>
+      // Selector de diseño: aplica, recuerda y marca el botón activo.
+      (function () {
+        var raiz = document.documentElement;
+        var botones = document.querySelectorAll(".selector-diseno button");
+        function pintar(d) {
+          botones.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.d === d)); });
+        }
+        var actual = raiz.getAttribute("data-diseno") || "1";
+        pintar(actual);
+        botones.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = b.dataset.d;
+            if (d === "1") raiz.removeAttribute("data-diseno");
+            else raiz.setAttribute("data-diseno", d);
+            try { localStorage.setItem("ec-diseno", d); } catch (e) {}
+            pintar(d);
+          });
+        });
+      })();
+    </script> <script>
+      // "Para salir hoy" solo tiene sentido la mañana del mismo día (hora de Chile).
+      (function () {
+        try {
+          var els = document.querySelectorAll(".salir[data-fecha]");
+          if (!els.length) return;
+          var ahora = new Date();
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(ahora);
+          var h = parseInt(new Intl.DateTimeFormat("en-GB", { timeZone: "America/Santiago", hour: "2-digit", hour12: false }).format(ahora), 10);
+          els.forEach(function (el) { if (el.getAttribute("data-fecha") === f && h >= 5 && h < 13) el.hidden = false; });
+        } catch (e) {}
+      })();
+      // Señal de frescura: "Edición de hoy" / "de ayer" / "última edición".
+      (function () {
+        try {
+          var el = document.querySelector(".hoy[data-fecha]");
+          if (!el) return;
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+          var dias = Math.round((Date.parse(f + "T12:00:00Z") - Date.parse(el.getAttribute("data-fecha") + "T12:00:00Z")) / 86400000);
+          el.textContent = dias <= 0 ? "Edición de hoy" : dias === 1 ? "Edición de ayer" : "Última edición";
+          el.hidden = false;
+        } catch (e) {}
+      })();
+    </script> <footer> <div class="in"> <span>Entender Chile · El resumen sin gritos. Hecho en Chile; cada cifra con su fuente.</span> <span class="mono">Actualizado 30-08-2026</span> </div> </footer> </body></html>

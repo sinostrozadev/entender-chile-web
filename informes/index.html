@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="es"> <head><script>
+      // Diseño elegido por el visitante (1 sobrio, 2 portada, 3 sala de datos).
+      // Se aplica antes de pintar para que no haya parpadeo.
+      (function () {
+        try {
+          var d = localStorage.getItem("ec-diseno");
+          if (d === "2" || d === "3") document.documentElement.setAttribute("data-diseno", d);
+        } catch (e) {}
+      })();
+    </script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Informes · Entender Chile</title><meta name="description" content="Las noticias de Chile explicadas cada mañana en diez minutos: qué pasó, por qué importa y de dónde sale cada dato."><meta property="og:title" content="Informes · Entender Chile"><meta property="og:description" content="Las noticias de Chile explicadas cada mañana en diez minutos: qué pasó, por qué importa y de dónde sale cada dato."><meta property="og:type" content="article"><link rel="icon" href="/entender-chile-web/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/entender-chile-web/_astro/acerca.By1A-ru0.css"></head> <body> <header class="cab"> <a class="marca" href="/entender-chile-web/">Entender Chile</a> <span class="tagline">El resumen sin gritos</span> <nav> <a href="/entender-chile-web/informes/" aria-current="page">Informes</a> <a href="/entender-chile-web/claves/">Claves</a> <a href="/entender-chile-web/en-que-quedo/">¿En qué quedó?</a> <a href="/entender-chile-web/acerca/">Acerca</a>  <span class="selector-diseno" role="group" aria-label="Elegir diseño"> <span>Diseño</span> <button type="button" data-d="1" aria-pressed="true" title="Sobrio (actual)">1</button> <button type="button" data-d="2" aria-pressed="false" title="Portada">2</button> <button type="button" data-d="3" aria-pressed="false" title="Sala de datos">3</button> </span> </nav> </header> <main> <p class="kicker">El informe diario</p> <h1>Todas las ediciones</h1> <p class="lead" style="max-width:46rem">Un informe por día. Aquí queda el archivo completo, de la edición más nueva a la más antigua.</p> <section class="mes"> <h2 class="titulo-seccion">Agosto de 2026</h2> <ul class="lista-dias"> <li><a href="/entender-chile-web/informes/2026-08-30/"><span class="mono">30 ago</span><span>Concepción entra en Alerta Roja por el aumento del río Andalién</span></a></li><li><a href="/entender-chile-web/informes/2026-08-29/"><span class="mono">29 ago</span><span>Desempleo llega a 9,5% y el Gobierno activa subsidios para nuevas contrataciones</span></a></li><li><a href="/entender-chile-web/informes/2026-08-28/"><span class="mono">28 ago</span><span>Mercado Libre triplicará su capacidad logística en Chile y proyecta más de 2.500 empleos</span></a></li><li><a href="/entender-chile-web/informes/2026-08-27/"><span class="mono">27 ago</span><span>El FOGAES se amplía a viviendas de hasta 6.000 UF y suma 30.000 cupos</span></a></li><li><a href="/entender-chile-web/informes/2026-08-26/"><span class="mono">26 ago</span><span>La reforma previsional entra en su segundo año de cotización del empleador</span></a></li><li><a href="/entender-chile-web/informes/2026-08-25/"><span class="mono">25 ago</span><span>La reforma previsional entra en una nueva etapa con la Cotización con Rentabilidad Protegida</span></a></li><li><a href="/entender-chile-web/informes/2026-08-24/"><span class="mono">24 ago</span><span>Chile inicia una negociación clave con Estados Unidos por el arancel de 12,5%</span></a></li> </ul> </section></main> <script>
+      // Selector de diseño: aplica, recuerda y marca el botón activo.
+      (function () {
+        var raiz = document.documentElement;
+        var botones = document.querySelectorAll(".selector-diseno button");
+        function pintar(d) {
+          botones.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.d === d)); });
+        }
+        var actual = raiz.getAttribute("data-diseno") || "1";
+        pintar(actual);
+        botones.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = b.dataset.d;
+            if (d === "1") raiz.removeAttribute("data-diseno");
+            else raiz.setAttribute("data-diseno", d);
+            try { localStorage.setItem("ec-diseno", d); } catch (e) {}
+            pintar(d);
+          });
+        });
+      })();
+    </script> <script>
+      // "Para salir hoy" solo tiene sentido la mañana del mismo día (hora de Chile).
+      (function () {
+        try {
+          var els = document.querySelectorAll(".salir[data-fecha]");
+          if (!els.length) return;
+          var ahora = new Date();
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(ahora);
+          var h = parseInt(new Intl.DateTimeFormat("en-GB", { timeZone: "America/Santiago", hour: "2-digit", hour12: false }).format(ahora), 10);
+          els.forEach(function (el) { if (el.getAttribute("data-fecha") === f && h >= 5 && h < 13) el.hidden = false; });
+        } catch (e) {}
+      })();
+      // Señal de frescura: "Edición de hoy" / "de ayer" / "última edición".
+      (function () {
+        try {
+          var el = document.querySelector(".hoy[data-fecha]");
+          if (!el) return;
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+          var dias = Math.round((Date.parse(f + "T12:00:00Z") - Date.parse(el.getAttribute("data-fecha") + "T12:00:00Z")) / 86400000);
+          el.textContent = dias <= 0 ? "Edición de hoy" : dias === 1 ? "Edición de ayer" : "Última edición";
+          el.hidden = false;
+        } catch (e) {}
+      })();
+    </script> <footer> <div class="in"> <span>Entender Chile · El resumen sin gritos. Hecho en Chile; cada cifra con su fuente.</span> <span class="mono">Actualizado 30-08-2026</span> </div> </footer> </body></html>

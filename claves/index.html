@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="es"> <head><script>
+      // Diseño elegido por el visitante (1 sobrio, 2 portada, 3 sala de datos).
+      // Se aplica antes de pintar para que no haya parpadeo.
+      (function () {
+        try {
+          var d = localStorage.getItem("ec-diseno");
+          if (d === "2" || d === "3") document.documentElement.setAttribute("data-diseno", d);
+        } catch (e) {}
+      })();
+    </script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Claves · Entender Chile</title><meta name="description" content="Las noticias de Chile explicadas cada mañana en diez minutos: qué pasó, por qué importa y de dónde sale cada dato."><meta property="og:title" content="Claves · Entender Chile"><meta property="og:description" content="Las noticias de Chile explicadas cada mañana en diez minutos: qué pasó, por qué importa y de dónde sale cada dato."><meta property="og:type" content="article"><link rel="icon" href="/entender-chile-web/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/entender-chile-web/_astro/acerca.By1A-ru0.css"></head> <body> <header class="cab"> <a class="marca" href="/entender-chile-web/">Entender Chile</a> <span class="tagline">El resumen sin gritos</span> <nav> <a href="/entender-chile-web/informes/">Informes</a> <a href="/entender-chile-web/claves/" aria-current="page">Claves</a> <a href="/entender-chile-web/en-que-quedo/">¿En qué quedó?</a> <a href="/entender-chile-web/acerca/">Acerca</a>  <span class="selector-diseno" role="group" aria-label="Elegir diseño"> <span>Diseño</span> <button type="button" data-d="1" aria-pressed="true" title="Sobrio (actual)">1</button> <button type="button" data-d="2" aria-pressed="false" title="Portada">2</button> <button type="button" data-d="3" aria-pressed="false" title="Sala de datos">3</button> </span> </nav> </header> <main> <p class="kicker">Claves para entender las noticias</p> <h1>La biblioteca</h1> <p class="lead" style="max-width:46rem">Cada Clave parte de una noticia y desarma el mecanismo que hay detrás: cómo funciona una institución, qué mide un indicador, quién decide qué. Sirve hoy y va a servir dentro de dos años.</p> <section class="mes"> <ul class="tarjetas" style="grid-template-columns:repeat(auto-fill,minmax(20rem,1fr))"> <li class="tarjeta"><a href="/entender-chile-web/claves/imsi-catcher-vigilancia-celular/"> <span class="kicker">30 ago</span> <strong>IMSI Catcher y vigilancia celular: cómo funciona una antena falsa y por qué necesita límites judiciales</strong> <p>¿Cómo puede una herramienta policial identificar teléfonos sin entrar físicamente en ellos, por qué puede afectar también a personas que no están siendo investigadas y qué función cumple la autorización judicial cuando el Estado utiliza tecnologías intrusivas?</p> </a></li><li class="tarjeta"><a href="/entender-chile-web/claves/como-leer-tasa-desempleo/"> <span class="kicker">29 ago</span> <strong>Cómo leer la tasa de desempleo: fuerza de trabajo, participación y ajuste estacional</strong> <p>¿Qué mide realmente la tasa de desempleo y por qué una misma cifra puede esconder situaciones laborales muy diferentes?</p> </a></li><li class="tarjeta"><a href="/entender-chile-web/claves/mineria-transfronteriza-chile-argentina/"> <span class="kicker">28 ago</span> <strong>Minería transfronteriza entre Chile y Argentina: cómo un tratado permite operar un yacimiento a ambos lados de la frontera</strong> <p>¿Cómo pueden dos países permitir que una empresa opere de manera integrada un proyecto minero que cruza una frontera sin borrar esa frontera, renunciar a sus leyes ni convertir el área en un territorio independiente?</p> </a></li><li class="tarjeta"><a href="/entender-chile-web/claves/fogaes-garantia-estatal-hipotecaria/"> <span class="kicker">27 ago</span> <strong>FOGAES y crédito hipotecario: qué garantiza el Estado, qué riesgo conserva el banco y por qué puede reducir el pie</strong> <p>¿Cómo cambia una garantía estatal el riesgo de un crédito hipotecario y por qué puede mejorar las condiciones de financiamiento sin significar que el Estado compre la vivienda, pague el dividendo o elimine la evaluación del banco?</p> </a></li><li class="tarjeta"><a href="/entender-chile-web/claves/control-constitucional-proyectos-ley/"> <span class="kicker">26 ago</span> <strong>Tribunal Constitucional y formación de la ley: qué revisa antes de la promulgación y por qué puede frenar una norma aprobada por el Congreso</strong> <p>Si el Congreso es el órgano encargado de aprobar las leyes, ¿por qué el Tribunal Constitucional puede revisar un proyecto antes de su promulgación? ¿Qué controla exactamente y dónde termina la decisión política del legislador y comienza el control jurídico de constitucionalidad?</p> </a></li><li class="tarjeta"><a href="/entender-chile-web/claves/cotizacion-rentabilidad-protegida/"> <span class="kicker">25 ago</span> <strong>Cotización con Rentabilidad Protegida: cómo funciona el nuevo puente entre ahorro individual y seguro social</strong> <p>¿Cómo puede una cotización financiar un seguro social y, a la vez, generar un derecho individual a nombre del trabajador? ¿En qué se diferencia ese mecanismo de simplemente depositar el dinero en la AFP o de cobrar una cotización puramente solidaria?</p> </a></li><li class="tarjeta"><a href="/entender-chile-web/claves/aranceles-costo-exclusiones/"> <span class="kicker">24 ago</span> <strong>Aranceles: cómo funcionan, quién soporta su costo y qué cambia cuando hay una exclusión</strong> <p>¿Qué ocurre económicamente desde que un país coloca un arancel a una importación hasta que ese costo llega -o no- al exportador, al importador, al comercio y al consumidor final?</p> </a></li> </ul> </section> </main> <script>
+      // Selector de diseño: aplica, recuerda y marca el botón activo.
+      (function () {
+        var raiz = document.documentElement;
+        var botones = document.querySelectorAll(".selector-diseno button");
+        function pintar(d) {
+          botones.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.d === d)); });
+        }
+        var actual = raiz.getAttribute("data-diseno") || "1";
+        pintar(actual);
+        botones.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = b.dataset.d;
+            if (d === "1") raiz.removeAttribute("data-diseno");
+            else raiz.setAttribute("data-diseno", d);
+            try { localStorage.setItem("ec-diseno", d); } catch (e) {}
+            pintar(d);
+          });
+        });
+      })();
+    </script> <script>
+      // "Para salir hoy" solo tiene sentido la mañana del mismo día (hora de Chile).
+      (function () {
+        try {
+          var els = document.querySelectorAll(".salir[data-fecha]");
+          if (!els.length) return;
+          var ahora = new Date();
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(ahora);
+          var h = parseInt(new Intl.DateTimeFormat("en-GB", { timeZone: "America/Santiago", hour: "2-digit", hour12: false }).format(ahora), 10);
+          els.forEach(function (el) { if (el.getAttribute("data-fecha") === f && h >= 5 && h < 13) el.hidden = false; });
+        } catch (e) {}
+      })();
+      // Señal de frescura: "Edición de hoy" / "de ayer" / "última edición".
+      (function () {
+        try {
+          var el = document.querySelector(".hoy[data-fecha]");
+          if (!el) return;
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+          var dias = Math.round((Date.parse(f + "T12:00:00Z") - Date.parse(el.getAttribute("data-fecha") + "T12:00:00Z")) / 86400000);
+          el.textContent = dias <= 0 ? "Edición de hoy" : dias === 1 ? "Edición de ayer" : "Última edición";
+          el.hidden = false;
+        } catch (e) {}
+      })();
+    </script> <footer> <div class="in"> <span>Entender Chile · El resumen sin gritos. Hecho en Chile; cada cifra con su fuente.</span> <span class="mono">Actualizado 30-08-2026</span> </div> </footer> </body></html>
