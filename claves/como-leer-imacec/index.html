@@ -1,0 +1,208 @@
+<!DOCTYPE html><html lang="es"> <head><script>
+      // Diseño elegido por el visitante (1 revista, 2 diario). Se aplica antes
+      // de pintar para que no haya parpadeo. ?diseno=2 en la URL lo fija (sirve
+      // para compartir un enlace "míralo en el diseño 2").
+      (function () {
+        try {
+          var q = (location.search.match(/[?&]diseno=([12])/) || [])[1];
+          if (q) localStorage.setItem("ec-diseno", q);
+          var d = q || localStorage.getItem("ec-diseno");
+          if (d === "2") document.documentElement.setAttribute("data-diseno", "2");
+        } catch (e) {}
+      })();
+    </script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cómo leer el Imacec: qué mide, por qué no es el PIB mensual y cómo separar tendencia de ruido · Entender Chile</title><meta name="description" content="¿Qué mide realmente el Imacec y cómo se debe interpretar una variación mensual o interanual para saber si la economía chilena está creciendo, estancándose o atr"><meta property="og:title" content="Cómo leer el Imacec: qué mide, por qué no es el PIB mensual y cómo separar tendencia de ruido · Entender Chile"><meta property="og:description" content="¿Qué mide realmente el Imacec y cómo se debe interpretar una variación mensual o interanual para saber si la economía chilena está creciendo, estancándose o atr"><meta property="og:type" content="article"><link rel="icon" href="/entender-chile-web/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/entender-chile-web/_astro/acerca.B0jrjTxn.css"></head> <body> <header class="cab"> <a class="marca" href="/entender-chile-web/">Entender Chile</a> <span class="tagline">El resumen sin gritos</span> <span class="cab-fecha">Santiago de Chile · Sábado, 5 de septiembre de 2026</span> <nav> <a href="/entender-chile-web/informes/">Informes</a> <a href="/entender-chile-web/claves/" aria-current="page">Claves</a> <a href="/entender-chile-web/en-que-quedo/">¿En qué quedó?</a> <a href="/entender-chile-web/acerca/">Acerca</a> <a class="suscribe" href="https://www.youtube.com/@entenderchile" rel="noopener">Suscríbete</a> <a class="suscribe" href="https://open.spotify.com/show/2Ay5U3wUiQ0RaDbeakqGVp" rel="noopener">Podcast</a> <span class="selector-diseno" role="group" aria-label="Elegir diseño"> <span>Diseño</span> <button type="button" data-d="1" aria-pressed="true" title="Revista">1</button> <button type="button" data-d="2" aria-pressed="false" title="Diario">2</button> </span> </nav> </header> <nav class="nav-cat" aria-label="Categorías"> <a href="/entender-chile-web/categorias/economia/" style="--cat:#8A6F3F">Economía</a><a href="/entender-chile-web/categorias/seguridad/" style="--cat:#7A5560">Seguridad y justicia</a><a href="/entender-chile-web/categorias/politica/" style="--cat:#2F7263">Política</a><a href="/entender-chile-web/categorias/regiones/" style="--cat:#44546A">Chile en regiones</a><a href="/entender-chile-web/categorias/salud/" style="--cat:#37716A">Salud</a><a href="/entender-chile-web/categorias/educacion/" style="--cat:#5C5A82">Educación y ciencia</a><a href="/entender-chile-web/categorias/internacional/" style="--cat:#556B7A">Internacional</a><a href="/entender-chile-web/categorias/plata-publica/" style="--cat:#7A6248">Plata pública</a> </nav> <main> <article class="pieza"> <header class="cabecera"> <p class="kicker">Claves para entender las noticias</p> <h1>Cómo leer el Imacec: qué mide, por qué no es el PIB mensual y cómo separar tendencia de ruido</h1> <p class="fecha">Martes, 1 de septiembre de 2026</p> <p class="acciones"><a class="boton" href="https://youtu.be/XVIxe4EJZbM">Ver el video</a></p> </header> <div class="con-indice"> <aside class="indice" aria-label="Índice"> <details open> <summary><span class="indice-titulo">En esta clave</span><span class="indice-actual" aria-live="polite"></span></summary> <nav> <ol> <li> <a href="#la-noticia-que-abrio-esta-pregunta-1-de-septiembre-de-2026">La noticia que abrió esta pregunta - 1 de septiembre de 2026</a>  </li><li> <a href="#la-pregunta-de-fondo">La pregunta de fondo</a>  </li><li> <a href="#el-imacec-es-una-estimacion-mensual-de-actividad-no-una-medicion-independiente-del-pib">El Imacec es una estimación mensual de actividad, no una medición independiente del PIB</a>  </li><li> <a href="#por-que-una-caida-industrial-no-determina-por-si-sola-el-imacec">Por qué una caída industrial no determina por sí sola el Imacec</a>  </li><li> <a href="#variacion-interanual-y-variacion-mensual-responden-preguntas-diferentes">Variación interanual y variación mensual responden preguntas diferentes</a>  </li><li> <a href="#que-hace-el-ajuste-estacional">Qué hace el ajuste estacional</a>  </li><li> <a href="#por-que-un-solo-mes-rara-vez-permite-diagnosticar-una-tendencia">Por qué un solo mes rara vez permite diagnosticar una tendencia</a>  </li><li> <a href="#incidencia-no-es-lo-mismo-que-crecimiento">Incidencia no es lo mismo que crecimiento</a>  </li><li> <a href="#el-imacec-no-mide-bienestar">El Imacec no mide bienestar</a>  </li><li> <a href="#por-que-las-cifras-pueden-revisarse">Por qué las cifras pueden revisarse</a>  </li><li> <a href="#como-leer-un-comunicado-del-imacec-en-cinco-preguntas">Cómo leer un comunicado del Imacec en cinco preguntas</a>  </li><li> <a href="#aplicado-al-caso-de-hoy-1-de-septiembre-de-2026">Aplicado al caso de hoy - 1 de septiembre de 2026</a>  </li><li> <a href="#que-conviene-recordar">Qué conviene recordar</a>  </li><li> <a href="#fuentes">Fuentes</a>  </li> </ol> </nav> </details> </aside> <div class="col-cuerpo"> <div class="cuerpo"><h2 id="la-noticia-que-abrio-esta-pregunta-1-de-septiembre-de-2026">La noticia que abrió esta pregunta - 1 de septiembre de 2026</h2>
+<p>El Informe diario del 1 de septiembre de 2026 señaló que el Índice de Producción Industrial cayó 5,1% interanual en julio, con retrocesos de 7,2% en minería y 4,9% en manufactura, y que el Banco Central publicaría durante esta jornada el Imacec correspondiente al mismo mes. El propio informe advirtió que el indicador industrial no equivale al Imacec y que servicios, comercio y otras actividades podían compensar o profundizar esa debilidad sectorial. (Informe diario, 1 sep 2026; INE, 31 ago 2026; Banco Central de Chile, 1 sep 2026).</p>
+<h2 id="la-pregunta-de-fondo">La pregunta de fondo</h2>
+<p>¿Qué mide realmente el Imacec y cómo se debe interpretar una variación mensual o interanual para saber si la economía chilena está creciendo, estancándose o atravesando solamente un movimiento transitorio de algunos sectores?</p>
+<h2 id="el-imacec-es-una-estimacion-mensual-de-actividad-no-una-medicion-independiente-del-pib">El Imacec es una estimación mensual de actividad, no una medición independiente del PIB</h2>
+<p>El Indicador Mensual de Actividad Económica, Imacec, es una estimación que resume la actividad de los distintos sectores de la economía chilena durante un mes. El Banco Central lo construye a partir de múltiples indicadores de oferta, ponderados según la participación que las distintas actividades económicas tuvieron en el PIB del año anterior. Su variación interanual constituye una aproximación de la evolución del PIB, pero el Imacec no debe confundirse con un PIB mensual definitivo. (Banco Central de Chile, metodología Imacec, consulta sep 2026).</p>
+<p>La diferencia importa porque el Producto Interno Bruto forma parte del sistema completo de Cuentas Nacionales y se calcula con información más amplia. El Imacec busca entregar una señal oportuna sobre la actividad antes de que estén disponibles esas cuentas trimestrales y anuales. Por eso se publica con mucha mayor rapidez, el primer día hábil de cada mes y con un rezago aproximado de 31 días respecto del período medido. (Banco Central de Chile, metodología Imacec, consulta sep 2026).</p>
+<p>La utilidad del indicador nace precisamente de ese intercambio entre oportunidad y precisión. Para saber qué ocurrió con la economía hace un mes, no es posible esperar varios meses hasta disponer de toda la información de Cuentas Nacionales. El Imacec permite construir una estimación temprana, pero esa estimación puede ser revisada posteriormente cuando aparecen antecedentes más completos.</p>
+<h2 id="por-que-una-caida-industrial-no-determina-por-si-sola-el-imacec">Por qué una caída industrial no determina por sí sola el Imacec</h2>
+<p>La economía no está formada solamente por fábricas y minas. El Imacec incorpora producción de bienes, comercio y servicios. Dentro de la producción de bienes aparecen minería, industria manufacturera y otras actividades. El Banco Central publica además un Imacec no minero para permitir observar la economía dejando fuera un sector que en Chile puede introducir movimientos relevantes de un mes a otro. (Banco Central de Chile, metodología Imacec, consulta sep 2026).</p>
+<p>Esto significa que un indicador sectorial puede entregar una señal importante sin anticipar mecánicamente el resultado agregado.</p>
+<p>Supongamos una economía simplificada con tres grandes bloques. La producción de bienes cae con fuerza, el comercio permanece estable y los servicios crecen. El resultado agregado dependerá tanto de la magnitud de esos movimientos como del peso de cada actividad dentro de la economía. Una caída de 8% en un sector pequeño no tiene el mismo efecto que una caída de 8% en un sector que representa una fracción mucho mayor del valor agregado.</p>
+<p>Por esa razón, los índices sectoriales y el Imacec responden preguntas relacionadas, pero distintas. Un índice industrial pregunta cómo evolucionó la producción de determinadas ramas industriales. El Imacec intenta aproximarse a cómo evolucionó el conjunto de la actividad económica.</p>
+<p>La palabra importante es ponderación. El Imacec no promedia simplemente los porcentajes de minería, industria, comercio y servicios. Los combina según su importancia económica. Si una actividad representa una proporción mayor del PIB, su movimiento tiene una incidencia mayor sobre el indicador agregado.</p>
+<h2 id="variacion-interanual-y-variacion-mensual-responden-preguntas-diferentes">Variación interanual y variación mensual responden preguntas diferentes</h2>
+<p>Cuando una noticia dice que el Imacec creció o cayó cierto porcentaje, conviene preguntar inmediatamente contra qué período se está comparando.</p>
+<p>La variación interanual compara un mes con el mismo mes del año anterior. Julio de un año se compara con julio del año previo. Esa comparación tiene una ventaja importante: enfrenta meses que normalmente comparten características estacionales parecidas. Diciembre tiene Navidad en ambos años, febrero tiene vacaciones en ambos períodos y septiembre contiene las Fiestas Patrias en ambas observaciones.</p>
+<p>Pero la comparación interanual también tiene una limitación. Su resultado depende de la base del año anterior. Si la actividad había sido excepcionalmente baja doce meses atrás, una expansión interanual elevada puede reflejar en parte esa base deprimida. Si el año anterior había sido extraordinariamente fuerte, una economía que hoy se mantiene en un nivel razonable puede mostrar una tasa interanual débil.</p>
+<p>La variación mensual, en cambio, compara un mes con el inmediatamente anterior. Esa lectura sirve mejor para detectar si la economía está ganando o perdiendo impulso en el margen, pero necesita corregir los patrones que se repiten cada año.</p>
+<p>Ahí aparece el ajuste estacional.</p>
+<h2 id="que-hace-el-ajuste-estacional">Qué hace el ajuste estacional</h2>
+<p>Muchas actividades económicas siguen calendarios previsibles. El comercio aumenta en ciertas fechas, la agricultura depende de temporadas, la construcción cambia con las condiciones climáticas, el turismo se concentra en determinados meses y el número de días hábiles también varía.</p>
+<p>Si se comparara directamente enero con diciembre, parte de la diferencia podría deberse simplemente a que son meses estructuralmente distintos y no a un verdadero cambio de tendencia.</p>
+<p>Las series desestacionalizadas buscan retirar estadísticamente esos patrones recurrentes y otros efectos de calendario para que la comparación entre meses consecutivos sea más informativa. El Banco Central publica las series del Imacec tanto en cifras originales como ajustadas estacionalmente. (Banco Central de Chile, metodología Imacec, consulta sep 2026).</p>
+<p>Por eso dos titulares aparentemente contradictorios pueden ser simultáneamente correctos. El Imacec puede crecer respecto del mismo mes del año anterior y caer respecto del mes precedente en términos desestacionalizados. En ese escenario, el nivel de actividad sigue siendo superior al de hace doce meses, pero el movimiento más reciente apunta hacia abajo.</p>
+<p>También puede ocurrir lo contrario: una tasa interanual negativa junto con un crecimiento mensual desestacionalizado. La economía seguiría por debajo del nivel comparable de un año atrás, pero habría mostrado una recuperación respecto del mes inmediatamente anterior.</p>
+<p>Ninguna de esas dos comparaciones debe reemplazar automáticamente a la otra. Juntas permiten distinguir nivel, trayectoria y velocidad reciente.</p>
+<h2 id="por-que-un-solo-mes-rara-vez-permite-diagnosticar-una-tendencia">Por qué un solo mes rara vez permite diagnosticar una tendencia</h2>
+<p>La actividad económica mensual contiene ruido. Una faena minera puede detenerse por mantenimiento. Una huelga puede reducir temporalmente la producción. Las lluvias pueden afectar la construcción. Un gran evento comercial puede mover las ventas. Un calendario con más o menos días hábiles puede alterar comparaciones. Una planta industrial importante puede detener operaciones y afectar una rama completa.</p>
+<p>En una economía como la chilena, la minería puede generar movimientos especialmente visibles. Por eso el Banco Central publica también el Imacec no minero, que ayuda a distinguir si un cambio agregado proviene principalmente de la minería o refleja un movimiento más extendido de la economía. (Banco Central de Chile, metodología Imacec, consulta sep 2026).</p>
+<p>Un dato mensual débil adquiere más significado si coincide con varios meses de deterioro, si la caída aparece en distintas actividades y si otros indicadores, como empleo, consumo, inversión o expectativas, apuntan en la misma dirección. Un solo dato muy negativo concentrado en un sector puede tener una interpretación diferente.</p>
+<p>Esto no significa ignorar los movimientos mensuales. Significa evitar convertir una observación en una tendencia antes de tener evidencia suficiente.</p>
+<h2 id="incidencia-no-es-lo-mismo-que-crecimiento">Incidencia no es lo mismo que crecimiento</h2>
+<p>Otro concepto útil al leer el Imacec es la incidencia.</p>
+<p>Una actividad puede crecer mucho y aportar poco al resultado total si su peso es pequeño. Otra puede crecer modestamente y explicar una parte importante del Imacec si representa una fracción grande de la economía.</p>
+<p>Por ejemplo, imaginemos que una actividad que representa 5% del agregado aumenta 10%, mientras otra que representa 40% cae 2%. No corresponde mirar solamente cuál porcentaje es mayor. Hay que considerar cuánto pesa cada sector y cuánto aporta su movimiento al resultado total.</p>
+<p>Por eso los comunicados del Banco Central suelen explicar qué actividades incidieron en el resultado, en lugar de limitarse a enumerar tasas de crecimiento. La pregunta correcta no es solo cuánto cambió un sector, sino cuánto contribuyó ese cambio al movimiento de la economía agregada.</p>
+<h2 id="el-imacec-no-mide-bienestar">El Imacec no mide bienestar</h2>
+<p>Que el Imacec crezca no significa automáticamente que todos los hogares estén mejor. Tampoco una caída mensual significa que todas las empresas estén produciendo menos.</p>
+<p>El indicador mide actividad económica agregada. No mide directamente distribución del ingreso, calidad del empleo, salarios reales, pobreza, endeudamiento de los hogares, acceso a vivienda ni calidad de los servicios públicos.</p>
+<p>Una economía puede crecer mientras algunos sectores pierden empleos. También puede ocurrir que el PIB por habitante avance poco aunque el producto agregado aumente, si la población crece a un ritmo parecido. Para evaluar bienestar se necesitan otros indicadores.</p>
+<p>Esta distinción evita atribuir al Imacec una función que no tiene. Su valor consiste en entregar una lectura frecuente y relativamente rápida de la actividad, no en resumir toda la situación económica y social del país.</p>
+<h2 id="por-que-las-cifras-pueden-revisarse">Por qué las cifras pueden revisarse</h2>
+<p>El primer Imacec publicado para un mes utiliza la mejor información disponible en ese momento, pero parte de los antecedentes puede ser preliminar. Más adelante llegan datos más completos y las Cuentas Nacionales trimestrales o anuales también pueden ser revisadas.</p>
+<p>El Banco Central señala expresamente que las series del Imacec se revisan con ocasión de las revisiones de las Cuentas Nacionales trimestrales y anuales. (Banco Central de Chile, metodología Imacec, consulta sep 2026).</p>
+<p>Una revisión no significa necesariamente que el dato anterior estuviera mal calculado. Significa que una estimación temprana fue actualizada con información más completa. Esa es una característica normal de las estadísticas macroeconómicas de alta frecuencia.</p>
+<p>Por eso conviene evitar conclusiones excesivamente precisas basadas en una décima de diferencia cuando la cifra todavía es preliminar. Para interpretar la dirección de la economía suele importar más la composición del resultado, su persistencia y su coherencia con otros indicadores.</p>
+<h2 id="como-leer-un-comunicado-del-imacec-en-cinco-preguntas">Cómo leer un comunicado del Imacec en cinco preguntas</h2>
+<p>Una lectura útil puede hacerse siguiendo cinco preguntas consecutivas.</p>
+<p>Primero, ¿cuánto varió respecto del mismo mes del año anterior? Esa cifra muestra la comparación interanual.</p>
+<p>Segundo, ¿qué ocurrió respecto del mes anterior en la serie desestacionalizada? Esa comparación entrega una señal más cercana sobre el impulso reciente.</p>
+<p>Tercero, ¿qué sectores explicaron el resultado? Conviene distinguir producción de bienes, comercio y servicios, y dentro de los bienes observar especialmente minería e industria.</p>
+<p>Cuarto, ¿qué ocurrió con el Imacec no minero? En Chile esa separación permite saber cuánto del movimiento agregado depende de la minería.</p>
+<p>Quinto, ¿el resultado confirma varios meses de tendencia o parece un movimiento concentrado y transitorio? Esa última pregunta obliga a colocar el dato dentro de una secuencia y evita diagnosticar la economía a partir de un solo mes.</p>
+<h2 id="aplicado-al-caso-de-hoy-1-de-septiembre-de-2026">Aplicado al caso de hoy - 1 de septiembre de 2026</h2>
+<p>Al 1 de septiembre de 2026, el Informe diario registraba que la producción industrial de julio había caído 5,1% interanual y que el Banco Central publicaría durante esta jornada el Imacec del mismo mes. La minería había retrocedido 7,2% y la manufactura 4,9% en la medición industrial citada por el informe. (Informe diario, 1 sep 2026; INE, 31 ago 2026).</p>
+<p>Ese antecedente permite anticipar presión negativa desde sectores productores de bienes, pero no permite deducir por sí solo cuánto crecerá o caerá el Imacec. Para interpretar correctamente el dato que publique el Banco Central habrá que observar cuánto de la debilidad industrial se refleja en el agregado y qué hicieron comercio, servicios y otras actividades.</p>
+<p>También será necesario separar la comparación interanual de la variación mensual desestacionalizada. Un Imacec débil frente a julio de 2025 podría convivir con una mejora respecto de junio de 2026, y un crecimiento interanual podría convivir con una caída mensual. Cada combinación describiría una trayectoria económica diferente.</p>
+<p>El análisis correcto, por tanto, no consiste en comprobar si el Imacec repite el 5,1% de caída industrial. Consiste en usar el indicador agregado para descubrir si la debilidad observada en minería y manufactura fue suficientemente amplia como para arrastrar al conjunto de la economía o si otras actividades la compensaron.</p>
+<h2 id="que-conviene-recordar">Qué conviene recordar</h2>
+<ul>
+<li>El Imacec es una estimación mensual de la actividad económica agregada y su variación interanual aproxima la evolución del PIB, pero no es un PIB mensual definitivo.</li>
+<li>Un indicador sectorial no determina mecánicamente el Imacec, porque las actividades se combinan según su peso económico y comercio y servicios pueden compensar o reforzar movimientos de los bienes.</li>
+<li>La variación interanual compara con el mismo mes del año anterior; la variación mensual desestacionalizada ayuda a observar el impulso reciente eliminando patrones recurrentes de calendario y temporada.</li>
+<li>Un solo mes puede contener mucho ruido. La composición sectorial, el Imacec no minero y la persistencia durante varios períodos ayudan a distinguir tendencia de movimientos transitorios.</li>
+<li>El Imacec mide actividad económica, no bienestar general. Para evaluar empleo, ingresos, distribución o condiciones de vida se necesitan indicadores adicionales.</li>
+</ul>
+<h2 id="fuentes">Fuentes</h2>
+<p>Informe diario, 1 de septiembre de 2026, caso de entrada y cifras coyunturales.
+Banco Central de Chile, Imacec, metodología y descripción institucional, consulta septiembre de 2026.
+Banco Central de Chile, Preguntas frecuentes del Imacec, consulta septiembre de 2026.
+Instituto Nacional de Estadísticas, Índice de Producción Industrial de julio de 2026, 31 de agosto de 2026.</p>
+</div> <nav class="nav-dias"> <span><a href="/entender-chile-web/claves/mercado-capitales-credito-hipotecario/"><span class="kicker gris">← Clave anterior</span>Mercado de capitales y crédito hipotecario: por qué el costo de financiar a los bancos termina influyendo en la tasa de una vivienda</a></span> <span style="text-align:right"><a href="/entender-chile-web/claves/fondos-generacionales-ciclo-de-vida/"><span class="kicker gris">Clave siguiente →</span>Fondos generacionales: cómo el ciclo de vida cambia el riesgo de los ahorros previsionales</a></span> </nav> </div> </div> </article> </main> <script>
+      // Selector de diseño: aplica, recuerda y marca el botón activo.
+      (function () {
+        var raiz = document.documentElement;
+        var botones = document.querySelectorAll(".selector-diseno button");
+        function pintar(d) {
+          botones.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.d === d)); });
+        }
+        var actual = raiz.getAttribute("data-diseno") || "1";
+        pintar(actual);
+        botones.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = b.dataset.d;
+            if (d === "1") raiz.removeAttribute("data-diseno");
+            else raiz.setAttribute("data-diseno", d);
+            try { localStorage.setItem("ec-diseno", d); } catch (e) {}
+            pintar(d);
+          });
+        });
+      })();
+    </script> <script>
+      // "Para salir hoy" solo tiene sentido la mañana del mismo día (hora de Chile).
+      (function () {
+        try {
+          var els = document.querySelectorAll(".salir[data-fecha]");
+          if (!els.length) return;
+          var ahora = new Date();
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(ahora);
+          var h = parseInt(new Intl.DateTimeFormat("en-GB", { timeZone: "America/Santiago", hour: "2-digit", hour12: false }).format(ahora), 10);
+          els.forEach(function (el) { if (el.getAttribute("data-fecha") === f && h >= 5 && h < 13) el.hidden = false; });
+        } catch (e) {}
+      })();
+      // Señal de frescura: "Edición de hoy" / "de ayer" / "última edición".
+      (function () {
+        try {
+          var el = document.querySelector(".hoy[data-fecha]");
+          if (!el) return;
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+          var dias = Math.round((Date.parse(f + "T12:00:00Z") - Date.parse(el.getAttribute("data-fecha") + "T12:00:00Z")) / 86400000);
+          el.textContent = dias <= 0 ? "Edición de hoy" : dias === 1 ? "Edición de ayer" : "Última edición";
+          el.hidden = false;
+        } catch (e) {}
+      })();
+    </script> <script>
+      // Índice lateral: marca la sección visible mientras se baja y, en móvil,
+      // muestra su nombre en la barra pegada arriba.
+      (function () {
+        var ind = document.querySelector(".indice");
+        if (!ind) return;
+        var det = ind.querySelector("details");
+        var etiqueta = ind.querySelector(".indice-actual");
+        var movil = window.matchMedia("(max-width: 959px)");
+        function modo() { if (det) det.open = !movil.matches; }
+        modo(); movil.addEventListener ? movil.addEventListener("change", modo) : movil.addListener(modo);
+        var metas = [];
+        ind.querySelectorAll("a[href^='#']").forEach(function (a) {
+          var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+          if (el) metas.push({ a: a, el: el });
+        });
+        var actual = null, pedido = false;
+        function medir() {
+          pedido = false;
+          var y = window.scrollY + (movil.matches ? 120 : 140), m = null;
+          for (var i = 0; i < metas.length; i++) {
+            if (metas[i].el.getBoundingClientRect().top + window.scrollY <= y) m = metas[i]; else break;
+          }
+          if (m === actual) return;
+          actual = m;
+          metas.forEach(function (x) { x.a.removeAttribute("aria-current"); });
+          if (m) {
+            m.a.setAttribute("aria-current", "true");
+            if (etiqueta) etiqueta.textContent = m.a.textContent;
+            if (!movil.matches) {
+              var r = m.a.getBoundingClientRect(), c = ind.getBoundingClientRect();
+              if (r.top < c.top || r.bottom > c.bottom) ind.scrollTop += r.top - c.top - c.height / 2;
+            }
+          } else if (etiqueta) etiqueta.textContent = "";
+        }
+        window.addEventListener("scroll", function () { if (!pedido) { pedido = true; requestAnimationFrame(medir); } }, { passive: true });
+        window.addEventListener("resize", medir);
+        ind.addEventListener("click", function (e) { if (e.target.closest("a") && movil.matches && det) det.open = false; });
+        medir();
+      })();
+      // "En una mirada": una frase a la vez, que cambia sola cada pocos segundos.
+      // Se detiene al pasar el mouse o al enfocar; respeta "reducir movimiento".
+      (function () {
+        var quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        document.querySelectorAll(".mirada-rot").forEach(function (rot) {
+          var items = [].slice.call(rot.querySelectorAll(".mirada > li"));
+          if (items.length < 2) return;
+          rot.classList.add("activo");
+          var ms = parseInt(rot.getAttribute("data-ms") || "7000", 10), k = 0, timer = null;
+          var puntos = rot.querySelector(".mirada-puntos"), cuenta = rot.querySelector(".mirada-cuenta");
+          var botones = items.map(function (_, i) {
+            var b = document.createElement("button"); b.type = "button";
+            b.setAttribute("aria-label", "Frase " + (i + 1) + " de " + items.length);
+            b.addEventListener("click", function () { ir(i); reiniciar(); });
+            if (puntos) puntos.appendChild(b);
+            return b;
+          });
+          function ir(n) {
+            k = (n + items.length) % items.length;
+            items.forEach(function (li, i) {
+              if (i === k) { li.setAttribute("aria-current", "true"); li.removeAttribute("aria-hidden"); }
+              else { li.removeAttribute("aria-current"); li.setAttribute("aria-hidden", "true"); }
+            });
+            botones.forEach(function (b, i) { b.setAttribute("aria-pressed", String(i === k)); });
+            if (cuenta) cuenta.textContent = (k + 1) + " / " + items.length;
+            var barra = rot.querySelector(".mirada-barra");
+            if (barra) barra.replaceWith(barra.cloneNode(true));
+          }
+          function parar() { clearInterval(timer); timer = null; rot.classList.add("pausa"); }
+          function reiniciar() { clearInterval(timer); rot.classList.remove("pausa"); if (!quieto && !document.hidden) timer = setInterval(function () { ir(k + 1); }, ms); }
+          var prev = rot.querySelector(".mirada-prev"), next = rot.querySelector(".mirada-next");
+          if (prev) prev.addEventListener("click", function () { ir(k - 1); reiniciar(); });
+          if (next) next.addEventListener("click", function () { ir(k + 1); reiniciar(); });
+          rot.addEventListener("mouseenter", parar); rot.addEventListener("mouseleave", reiniciar);
+          rot.addEventListener("focusin", parar); rot.addEventListener("focusout", reiniciar);
+          document.addEventListener("visibilitychange", function () { document.hidden ? parar() : reiniciar(); });
+          if (quieto) rot.classList.add("quieto");
+          ir(0); reiniciar();
+        });
+      })();
+    </script> <footer> <div class="in"> <span>Entender Chile · El resumen sin gritos. Hecho en Chile; cada cifra con su fuente.</span> <span><a href="/entender-chile-web/privacidad/">Privacidad</a> · <a href="/entender-chile-web/terminos/">Términos</a></span> <span class="mono">Actualizado 05-09-2026</span> </div> </footer> </body></html>

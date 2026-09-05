@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Entender Chile</title>
+  <link>https://sinostrozadev.github.io/entender-chile-web/</link>
+  <atom:link href="https://sinostrozadev.github.io/entender-chile-web/podcast.xml" rel="self" type="application/rss+xml"/>
+  <language>es-cl</language>
+  <description>Las noticias de Chile explicadas cada mañana en unos diez minutos. Cada cifra con su fuente y los hechos separados de las opiniones. El resumen sin gritos.</description>
+  <itunes:author>Entender Chile</itunes:author>
+  <itunes:owner><itunes:name>Entender Chile</itunes:name><itunes:email>entenderchile@gmail.com</itunes:email></itunes:owner>
+  <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada.png"/>
+  <itunes:category text="News"><itunes:category text="Daily News"/></itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <item>
+    <title>Clave · ¿Cómo funciona la regla fiscal y el balance estructural?</title>
+    <description>Chile no construye su Presupuesto suponiendo que todos los ingresos del momento durarán para siempre. Este video explica cómo el balance estructural separa ingresos transitorios y persistentes, para qué sirven el PIB no minero tendencial y el precio de referencia del cobre, y qué papel cumplen los expertos, el Gobierno y el Congreso.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-05-clave.mp3" length="14269248" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-clave-2026-09-05</guid>
+    <pubDate>Sat, 05 Sep 2026 16:00:00 GMT</pubDate>
+    <itunes:duration>595</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-clave.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>05-09-2026 · Muere Camilo Escalona, histórico dirigente socialista y expresidente del Senado</title>
+    <description>Chile despide a Camilo Escalona, histórico dirigente del Partido Socialista y expresidente del Senado. Además, revisamos los parámetros que guiarán el Presupuesto 2027, los pagos extraordinarios del Fondo de Cesantía Solidario y el aumento de actividad del volcán Villarrica. Cerramos con titulares, seguimiento de casos y la agenda del sábado.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-05-informe.mp3" length="16478208" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-informe-2026-09-05</guid>
+    <pubDate>Sat, 05 Sep 2026 10:30:00 GMT</pubDate>
+    <itunes:duration>687</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-informe.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>Clave · ¿Qué ocurre cuando Contraloría detecta un perjuicio fiscal?</title>
+    <description>Una fiscalización puede detectar dinero público perdido, pero eso no significa que exista una condena ni que los recursos ya hayan sido recuperados. Este video explica qué es un reparo, cómo funciona el juicio de cuentas y por qué la responsabilidad patrimonial, administrativa y penal son caminos distintos.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-04-clave.mp3" length="13487616" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-clave-2026-09-04</guid>
+    <pubDate>Fri, 04 Sep 2026 16:00:00 GMT</pubDate>
+    <itunes:duration>562</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-clave.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>04-09-2026 · Chile y Argentina ratifican la soberanía chilena sobre el Estrecho de Magallanes</title>
+    <description>Chile y Argentina cerraron la controversia inmediata por el Estrecho de Magallanes al reafirmar la soberanía chilena sobre la totalidad del paso. La jornada también trae una investigación de Fiscalía por el caso Cerimedo, un reparo de Contraloría por vacunas vencidas y nuevas señales sobre tasas, inflación y clima. Cerramos con titulares, seguimiento de casos y lo que conviene observar durante el día.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-04-informe.mp3" length="15715584" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-informe-2026-09-04</guid>
+    <pubDate>Fri, 04 Sep 2026 10:30:00 GMT</pubDate>
+    <itunes:duration>655</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-informe.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>Clave · ¿Cómo conviven soberanía y libre navegación en un estrecho?</title>
+    <description>El Estrecho de Magallanes permite entender una distinción fundamental del derecho internacional: soberanía territorial y libertad de navegación no son lo mismo. Este video explica qué establecieron Chile y Argentina, cómo funcionan las obligaciones creadas por tratados y por qué permitir el tránsito internacional no convierte un territorio en soberanía compartida.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-03-clave.mp3" length="13140864" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-clave-2026-09-03</guid>
+    <pubDate>Thu, 03 Sep 2026 16:00:00 GMT</pubDate>
+    <itunes:duration>548</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-clave.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>03-09-2026 · Kast recibe a Milei con el Estrecho de Magallanes en disputa</title>
+    <description>José Antonio Kast recibe a Javier Milei en La Moneda mientras sigue pendiente la controversia por el decreto argentino sobre el Estrecho de Magallanes. La Cámara aprobó investigar eventuales vínculos de Fernando Cerimedo y el uso de bots, y una nueva ley cambia quién puede cobrar una pensión de sobrevivencia tras delitos graves de violencia intrafamiliar. También revisamos el aumento de robos de cobre en Antofagasta, el bono extraordinario por niño y el resto de la jornada.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-03-informe.mp3" length="17219520" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-informe-2026-09-03</guid>
+    <pubDate>Thu, 03 Sep 2026 10:30:00 GMT</pubDate>
+    <itunes:duration>717</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-informe.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>Clave · ¿Cómo funcionan los fondos generacionales y qué riesgo asumen?</title>
+    <description>Los fondos generacionales cambian la forma en que se administra el riesgo del ahorro previsional a lo largo de la vida. Este video explica por qué el horizonte hasta la jubilación importa, cómo funciona una trayectoria de inversión, qué cambia frente a los multifondos y por qué una cartera más conservadora tampoco está libre de pérdidas.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-02-clave.mp3" length="16285824" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-clave-2026-09-02</guid>
+    <pubDate>Wed, 02 Sep 2026 16:00:00 GMT</pubDate>
+    <itunes:duration>679</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-clave.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>02-09-2026 · La economía cae 1,5% y Hacienda prepara una nueva proyección para 2026</title>
+    <description></description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-02-informe.mp3" length="19497024" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-informe-2026-09-02</guid>
+    <pubDate>Wed, 02 Sep 2026 10:30:00 GMT</pubDate>
+    <itunes:duration>812</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-informe.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>Clave · ¿Cómo leer el Imacec sin confundir señal con ruido?</title>
+    <description>El Imacec permite seguir mes a mes la actividad económica chilena, pero leer una sola cifra puede llevar a conclusiones equivocadas. En este video aprenderás qué mide, por qué no es un PIB mensual definitivo y cómo combinar variación interanual, ajuste estacional, sectores e incidencia para interpretar mejor sus resultados.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-01-clave.mp3" length="17303040" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-clave-2026-09-01</guid>
+    <pubDate>Tue, 01 Sep 2026 16:00:00 GMT</pubDate>
+    <itunes:duration>721</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-clave.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>01-09-2026 · La industria cae 5,1% antes del Imacec de julio</title>
+    <description>Septiembre comienza con una señal débil desde la industria, mientras el Banco Central publica hoy el Imacec de julio. Más de 500 mil pensionados de 75 a 81 años pasan al nuevo máximo de la PGU y el Gobierno abre más tiempo para negociar su reforma constitucional de seguridad. Además, revisamos la sentencia por la megafraude de licencias médicas, vivienda, Metro y otras noticias de la jornada.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-09-01-informe.mp3" length="19657728" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-informe-2026-09-01</guid>
+    <pubDate>Tue, 01 Sep 2026 10:30:00 GMT</pubDate>
+    <itunes:duration>819</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-informe.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>Clave · ¿Por qué el mercado de capitales influye en tu hipotecario?</title>
+    <description>Una hipoteca no empieza cuando una familia entra al banco. En este video explicamos de dónde salen los recursos que permiten prestar a veinte o treinta años, qué factores forman la tasa hipotecaria y por qué la liquidez, los inversionistas y el mercado de capitales pueden terminar influyendo en el dividendo.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-08-31-clave.mp3" length="18893952" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-clave-2026-08-31</guid>
+    <pubDate>Mon, 31 Aug 2026 16:00:00 GMT</pubDate>
+    <itunes:duration>787</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-clave.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>31-08-2026 · Milei llega a Chile tras el impasse por el Estrecho de Magallanes</title>
+    <description>Javier Milei viajará a Santiago el jueves para reunirse con José Antonio Kast después de la controversia por el Estrecho de Magallanes. La jornada también está marcada por un operativo nacional contra venta de drogas en redes sociales, una futura reforma al mercado de capitales con foco hipotecario y la catástrofe en Nepal y China. Revisamos además empleo, combustibles, clima y los titulares que completan el día.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-08-31-informe.mp3" length="20148480" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-informe-2026-08-31</guid>
+    <pubDate>Mon, 31 Aug 2026 10:30:00 GMT</pubDate>
+    <itunes:duration>840</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-informe.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>Clave · ¿Cómo puede una antena falsa identificar tu celular?</title>
+    <description>Un IMSI Catcher puede hacerse pasar por infraestructura de una red móvil para identificar o localizar dispositivos cercanos. Este video explica cómo funciona, por qué no equivale a intervenir el contenido de un teléfono y por qué el control judicial importa especialmente cuando también pueden quedar involucrados celulares de terceros.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-08-30-clave.mp3" length="18233280" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-clave-2026-08-30</guid>
+    <pubDate>Sun, 30 Aug 2026 16:00:00 GMT</pubDate>
+    <itunes:duration>760</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-clave.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+  <item>
+    <title>30-08-2026 · Concepción en Alerta Roja por el aumento del río Andalién</title>
+    <description>Concepción comienza este domingo bajo Alerta Roja por el aumento del río Andalién, mientras Ñuble evalúa los daños que dejó un tornado en Yungay. En seguridad, la captura en Lima de R15 y la llegada a Chile de dos imputados del caso Ronald Ojeda vuelven a poner el foco en investigaciones que cruzan fronteras. También revisamos la controversia diplomática con Israel, proyectos mineros entre Chile y Argentina y la emergencia que continúa en Nepal.</description>
+    <enclosure url="https://github.com/sinostrozadev/entender-chile-web/releases/download/audio/2026-08-30-informe.mp3" length="18309888" type="audio/mpeg"/>
+    <guid isPermaLink="false">entender-chile-informe-2026-08-30</guid>
+    <pubDate>Sun, 30 Aug 2026 10:30:00 GMT</pubDate>
+    <itunes:duration>763</itunes:duration>
+    <itunes:image href="https://sinostrozadev.github.io/entender-chile-web/podcast-portada-informe.jpg"/>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+</channel>
+</rss>
