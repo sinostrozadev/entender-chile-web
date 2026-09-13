@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="es"> <head><script>
+      // Diseño elegido por el visitante (1 revista, 2 diario). Se aplica antes
+      // de pintar para que no haya parpadeo. ?diseno=2 en la URL lo fija (sirve
+      // para compartir un enlace "míralo en el diseño 2").
+      (function () {
+        try {
+          var q = (location.search.match(/[?&]diseno=([12])/) || [])[1];
+          if (q) localStorage.setItem("ec-diseno", q);
+          var d = q || localStorage.getItem("ec-diseno");
+          if (d === "2") document.documentElement.setAttribute("data-diseno", "2");
+        } catch (e) {}
+      })();
+    </script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Prisión preventiva en Chile: cuándo puede ordenarse y por qué no equivale a una condena · Entender Chile</title><meta name="description" content="¿Qué propósito cumple la prisión preventiva, qué debe acreditar quien la solicita, quién la decide, cuánto puede durar y qué diferencias la separan de una pena?"><meta property="og:title" content="Prisión preventiva en Chile: cuándo puede ordenarse y por qué no equivale a una condena · Entender Chile"><meta property="og:description" content="¿Qué propósito cumple la prisión preventiva, qué debe acreditar quien la solicita, quién la decide, cuánto puede durar y qué diferencias la separan de una pena?"><meta property="og:type" content="article"><link rel="icon" href="/entender-chile-web/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/entender-chile-web/_astro/acerca.B0jrjTxn.css"></head> <body> <header class="cab"> <a class="marca" href="/entender-chile-web/">Entender Chile</a> <span class="tagline">El resumen sin gritos</span> <span class="cab-fecha">Santiago de Chile · Domingo, 13 de septiembre de 2026</span> <nav> <a href="/entender-chile-web/informes/">Informes</a> <a href="/entender-chile-web/claves/" aria-current="page">Claves</a> <a href="/entender-chile-web/en-que-quedo/">¿En qué quedó?</a> <a href="/entender-chile-web/acerca/">Acerca</a> <a class="suscribe" href="https://www.youtube.com/@entenderchile" rel="noopener">Suscríbete</a> <a class="suscribe" href="https://open.spotify.com/show/2Ay5U3wUiQ0RaDbeakqGVp" rel="noopener">Podcast</a> <span class="selector-diseno" role="group" aria-label="Elegir diseño"> <span>Diseño</span> <button type="button" data-d="1" aria-pressed="true" title="Revista">1</button> <button type="button" data-d="2" aria-pressed="false" title="Diario">2</button> </span> </nav> </header> <nav class="nav-cat" aria-label="Categorías"> <a href="/entender-chile-web/categorias/economia/" style="--cat:#8A6F3F">Economía</a><a href="/entender-chile-web/categorias/seguridad/" style="--cat:#7A5560">Seguridad y justicia</a><a href="/entender-chile-web/categorias/politica/" style="--cat:#2F7263">Política</a><a href="/entender-chile-web/categorias/regiones/" style="--cat:#44546A">Chile en regiones</a><a href="/entender-chile-web/categorias/salud/" style="--cat:#37716A">Salud</a><a href="/entender-chile-web/categorias/educacion/" style="--cat:#5C5A82">Educación y ciencia</a><a href="/entender-chile-web/categorias/internacional/" style="--cat:#556B7A">Internacional</a><a href="/entender-chile-web/categorias/plata-publica/" style="--cat:#7A6248">Plata pública</a> </nav> <main> <article class="pieza"> <header class="cabecera"> <p class="kicker">Claves para entender las noticias</p> <h1>Prisión preventiva en Chile: cuándo puede ordenarse y por qué no equivale a una condena</h1> <p class="fecha">Sábado, 12 de septiembre de 2026</p>  </header> <div class="con-indice"> <aside class="indice" aria-label="Índice"> <details open> <summary><span class="indice-titulo">En esta clave</span><span class="indice-actual" aria-live="polite"></span></summary> <nav> <ol> <li> <a href="#la-noticia-que-abrio-esta-pregunta-12-de-septiembre-de-2026">La noticia que abrió esta pregunta - 12 de septiembre de 2026</a>  </li><li> <a href="#la-pregunta-de-fondo">La pregunta de fondo</a>  </li><li> <a href="#una-medida-cautelar-no-un-adelanto-de-la-pena">Una medida cautelar, no un adelanto de la pena</a>  </li><li> <a href="#formalizar-no-es-acusar-ni-condenar">Formalizar no es acusar ni condenar</a>  </li><li> <a href="#los-tres-grupos-de-requisitos">Los tres grupos de requisitos</a>  </li><li> <a href="#que-significa-peligro-para-la-seguridad-de-la-sociedad">Qué significa peligro para la seguridad de la sociedad</a>  </li><li> <a href="#peligro-para-la-victima-y-riesgo-para-la-investigacion">Peligro para la víctima y riesgo para la investigación</a>  </li><li> <a href="#el-juez-decide-no-la-fiscalia">El juez decide, no la Fiscalía</a>  </li><li> <a href="#por-que-existen-medidas-menos-intensas">Por qué existen medidas menos intensas</a>  </li><li> <a href="#la-presuncion-de-inocencia-sigue-vigente">La presunción de inocencia sigue vigente</a>  </li><li> <a href="#duracion-revision-y-termino">Duración, revisión y término</a>  </li><li> <a href="#apelar-no-es-repetir-toda-la-investigacion">Apelar no es repetir toda la investigación</a>  </li><li> <a href="#la-prision-preventiva-y-la-opinion-publica">La prisión preventiva y la opinión pública</a>  </li><li> <a href="#como-leer-una-noticia-sobre-cautelares">Cómo leer una noticia sobre cautelares</a>  </li><li> <a href="#aplicado-al-caso-de-hoy-12-de-septiembre-de-2026">Aplicado al caso de hoy - 12 de septiembre de 2026</a>  </li><li> <a href="#que-conviene-recordar">Qué conviene recordar</a>  </li><li> <a href="#que-observar-en-esta-discusion-septiembre-de-2026">Qué observar en esta discusión - septiembre de 2026</a>  </li><li> <a href="#fuentes">Fuentes</a>  </li> </ol> </nav> </details> </aside> <div class="col-cuerpo"> <div class="cuerpo"><h2 id="la-noticia-que-abrio-esta-pregunta-12-de-septiembre-de-2026">La noticia que abrió esta pregunta - 12 de septiembre de 2026</h2>
+<p>El informe diario registró que un tribunal decretó prisión preventiva para el exfiscal Vinko Fodich y otros dos imputados en una investigación por secuestro extorsivo, asociación criminal y otros ilícitos. También consignó que la defensa de Fodich reconoció una vinculación puntual con hechos investigados, pero negó que integrara un secuestro. Al 12 de septiembre de 2026 la investigación continuaba y no existía una condena por estos hechos (Fiscalía Supraterritorial, Poder Judicial y medios presentes en la audiencia, 11 sep 2026; Informe diario de Entender Chile, 12 sep 2026).</p>
+<p>Que una persona quede privada de libertad antes del juicio suele producir una confusión: si todavía se presume inocente, ¿por qué puede estar en prisión?</p>
+<h2 id="la-pregunta-de-fondo">La pregunta de fondo</h2>
+<p>¿Qué propósito cumple la prisión preventiva, qué debe acreditar quien la solicita, quién la decide, cuánto puede durar y qué diferencias la separan de una pena?</p>
+<h2 id="una-medida-cautelar-no-un-adelanto-de-la-pena">Una medida cautelar, no un adelanto de la pena</h2>
+<p>El proceso penal necesita tiempo. La Fiscalía investiga, las partes reúnen antecedentes, el tribunal controla la legalidad y, si la causa llega a juicio, la acusación y la defensa presentan prueba ante jueces que deben decidir. Durante ese recorrido puede aparecer un riesgo concreto: que el imputado huya, altere evidencia, amenace a una víctima o ponga en peligro la seguridad de otras personas.</p>
+<p>Las medidas cautelares intentan controlar esos riesgos mientras el proceso está abierto. No buscan castigar el delito atribuido, porque la culpabilidad todavía no ha sido establecida en una sentencia firme. La prisión preventiva es la cautelar personal más intensa: encierra a una persona imputada antes de que exista condena.</p>
+<p>Esa intensidad explica su carácter excepcional. El Código Procesal Penal establece que las medidas privativas o restrictivas de libertad sólo pueden imponerse cuando sean absolutamente indispensables para asegurar los fines del procedimiento y durante el tiempo necesario. También dispone que la prisión preventiva procede cuando las demás cautelares resultan insuficientes para esos fines (Código Procesal Penal, arts. 122 y 139).</p>
+<p>La excepcionalidad no significa que la medida sea rara por definición ni que sólo pueda aplicarse a determinados nombres de delitos. Significa que no debe surgir automáticamente de una imputación: requiere una decisión judicial fundada en los antecedentes y riesgos del caso concreto.</p>
+<h2 id="formalizar-no-es-acusar-ni-condenar">Formalizar no es acusar ni condenar</h2>
+<p>La formalización es la comunicación que el fiscal hace al imputado, ante el juez de garantía, de que desarrolla una investigación en su contra por hechos determinados. Delimita el caso conocido hasta ese momento y activa efectos procesales, pero no prueba la culpabilidad (Código Procesal Penal, art. 229).</p>
+<p>Después de formalizar, la Fiscalía o el querellante pueden solicitar cautelares. La defensa puede oponerse, discutir los antecedentes, proponer medidas menos intensas y recurrir cuando la ley lo permite. El juez de garantía decide en audiencia.</p>
+<p>La acusación aparece más adelante, si la Fiscalía considera que reunió fundamento suficiente para llevar el caso a juicio. La condena sólo puede dictarse después del procedimiento correspondiente y exige que el tribunal alcance la convicción, más allá de toda duda razonable, de que ocurrió el delito y que el acusado tuvo participación culpable y penada por la ley (Código Procesal Penal, art. 340).</p>
+<p>Por eso estas palabras no son intercambiables. Una persona detenida no está necesariamente formalizada. Una persona formalizada no está necesariamente acusada. Una persona acusada no está condenada. Una persona en prisión preventiva sigue siendo imputada y conserva la presunción de inocencia.</p>
+<h2 id="los-tres-grupos-de-requisitos">Los tres grupos de requisitos</h2>
+<p>El artículo 140 del Código Procesal Penal exige que quien pide prisión preventiva acredite requisitos acumulativos. No basta satisfacer sólo uno.</p>
+<p>Primero, deben existir antecedentes que justifiquen la existencia del delito investigado. Esto no equivale a la prueba completa requerida para condenar, pero exige más que una sospecha vaga o una afirmación sin respaldo.</p>
+<p>Segundo, deben existir antecedentes que permitan presumir fundadamente la participación del imputado como autor, cómplice o encubridor. La cautelar se decide sobre información disponible en una fase temprana, no sobre el conjunto definitivo de prueba que podría discutirse en juicio.</p>
+<p>Tercero, debe demostrarse una necesidad cautelar. La ley contempla hipótesis vinculadas con el éxito de diligencias precisas de la investigación, el peligro para la seguridad de la sociedad, el peligro para la seguridad de la víctima y el peligro de fuga. Este último puede incluir el riesgo de que la persona no comparezca a los actos del procedimiento o a la ejecución de una eventual sentencia (Código Procesal Penal, art. 140).</p>
+<p>Los dos primeros grupos miran la plausibilidad del caso penal. El tercero mira el riesgo procesal o de protección. Aunque parezca sólido que ocurrió un delito y que una persona participó, la prisión preventiva no se justifica si una medida menos gravosa controla adecuadamente el riesgo relevante.</p>
+<h2 id="que-significa-peligro-para-la-seguridad-de-la-sociedad">Qué significa peligro para la seguridad de la sociedad</h2>
+<p>Esta causal genera debates porque no describe un peligro físico inmediato con una sola fórmula. El Código entrega criterios que el tribunal debe considerar, como la gravedad de la pena asignada al delito, el número y carácter de los delitos imputados, la existencia de procesos pendientes, el hecho de actuar en grupo o pandilla y antecedentes relacionados con condenas o medidas vigentes, según la regulación aplicable (Código Procesal Penal, art. 140).</p>
+<p>El análisis no debería convertirse en una suma mecánica. Una pena alta puede ser un antecedente relevante, pero la decisión debe explicar cómo los elementos del caso sostienen la necesidad de encarcelar cautelarmente. La gravedad mediática, la indignación pública o el cargo que ocupó una persona no sustituyen esa fundamentación.</p>
+<p>Tampoco debe confundirse seguridad de la sociedad con una declaración anticipada de peligrosidad moral. La pregunta jurídica es si, dadas las circunstancias acreditadas en esta etapa, mantener al imputado en libertad crea un riesgo cautelar que no puede controlarse de otra forma.</p>
+<h2 id="peligro-para-la-victima-y-riesgo-para-la-investigacion">Peligro para la víctima y riesgo para la investigación</h2>
+<p>La seguridad de la víctima puede justificar prisión preventiva cuando existen antecedentes calificados que permiten presumir que el imputado atentará contra ella, su familia o sus bienes. La evaluación debe considerar amenazas, hostigamientos, capacidad real de acercamiento u otros elementos pertinentes. No toda preocupación subjetiva basta, pero tampoco es necesario esperar un nuevo ataque para adoptar protección.</p>
+<p>La necesidad para el éxito de la investigación se relaciona con diligencias concretas. Puede existir riesgo de destruir, modificar, ocultar o falsificar pruebas, o de inducir a otras personas a declarar falsamente o comportarse de manera desleal. La resolución debe vincular el riesgo con actuaciones precisas, no invocar de modo abstracto que la investigación aún está abierta (Código Procesal Penal, art. 140).</p>
+<p>Estos riesgos cambian con el tiempo. Una diligencia que al inicio necesitaba protección puede haberse completado meses después. Una amenaza puede intensificarse o desaparecer. Por eso la medida debe poder revisarse a la luz de antecedentes nuevos.</p>
+<h2 id="el-juez-decide-no-la-fiscalia">El juez decide, no la Fiscalía</h2>
+<p>La Fiscalía dirige la investigación y puede pedir la prisión preventiva, pero no puede imponerla por sí misma. El querellante también puede solicitarla en los casos que permite la ley. La decisión corresponde al tribunal después de escuchar a los intervinientes.</p>
+<p>Esta separación distribuye funciones. El órgano que investiga plantea su teoría y los riesgos. La defensa los contradice. El juez controla si la petición satisface la ley. El mismo principio opera cuando se pide revisar, sustituir o revocar la cautelar.</p>
+<p>Que un tribunal conceda la solicitud no significa que adopte como verdadera toda la versión de la Fiscalía. Significa que, con el estándar propio de esa etapa, estimó cumplidos los requisitos de la medida. El juicio posterior conserva un estándar mucho más exigente y debe basarse en la prueba producida conforme a sus reglas.</p>
+<h2 id="por-que-existen-medidas-menos-intensas">Por qué existen medidas menos intensas</h2>
+<p>El Código Procesal Penal permite cautelares distintas de la prisión preventiva. Entre ellas se encuentran la privación de libertad en el domicilio, la sujeción a vigilancia, la obligación de presentarse periódicamente, la prohibición de salir del país o de un territorio, y la prohibición de acercarse a determinadas personas o lugares. La combinación exacta depende de la ley y del caso (Código Procesal Penal, art. 155).</p>
+<p>Estas alternativas reflejan el principio de proporcionalidad. Si el riesgo es que una persona salga del país, el arraigo y la entrega de documentos pueden ser suficientes. Si el riesgo es acercarse a una víctima, una prohibición de contacto y vigilancia puede ser pertinente. Si ninguna alternativa reduce adecuadamente un riesgo grave, la prisión preventiva puede resultar necesaria.</p>
+<p>La pregunta correcta no es sólo si existe algún riesgo, sino si ese riesgo puede controlarse razonablemente con una medida menos lesiva. Una resolución fundada debe explicar por qué descarta esas alternativas cuando ordena el encierro.</p>
+<h2 id="la-presuncion-de-inocencia-sigue-vigente">La presunción de inocencia sigue vigente</h2>
+<p>Presumir la inocencia no significa fingir que no hay investigación ni impedir toda cautelar. Significa que la carga de probar la acusación recae en quien acusa, que el imputado no debe demostrar su inocencia y que no puede ser tratado jurídicamente como culpable antes de una sentencia.</p>
+<p>La prisión preventiva tensiona esa garantía porque sus efectos materiales se parecen al encarcelamiento penal. La persona pierde libertad, ve alterada su vida familiar y laboral y puede permanecer meses bajo custodia. Precisamente por eso la decisión exige control judicial, fundamentos y revisión.</p>
+<p>El trato público también importa. Informar que alguien está en prisión preventiva es legítimo; afirmar que &quot;ya está pagando&quot; el delito es incorrecto. La cautelar protege fines del proceso. La pena expresa responsabilidad penal después de una condena.</p>
+<p>Si finalmente hay absolución, la prisión preventiva anterior no se transforma retroactivamente en una pena legítima. Su legalidad debe evaluarse según los antecedentes, reglas y necesidad existentes mientras estuvo vigente. La absolución posterior tampoco demuestra automáticamente que el juez actuó mal al decretarla; puede significar que la prueba del juicio no alcanzó el estándar de condena.</p>
+<h2 id="duracion-revision-y-termino">Duración, revisión y término</h2>
+<p>La prisión preventiva no tiene como finalidad durar hasta el máximo posible. Debe mantenerse sólo mientras subsistan sus requisitos. El tribunal puede revisarla a petición de parte y, en situaciones previstas por la ley, debe examinar de oficio si continúa siendo necesaria (Código Procesal Penal, arts. 144, 145 y 152).</p>
+<p>La defensa puede aportar nuevos antecedentes, cuestionar la persistencia del riesgo o proponer una cautelar alternativa. La Fiscalía o el querellante pueden sostener que las razones permanecen. El tribunal debe decidir según el estado actual del proceso, no limitarse a repetir la fundamentación original.</p>
+<p>El paso del tiempo tiene doble importancia. Puede reducir ciertos riesgos porque las diligencias ya se realizaron, pero también puede volver desproporcionada una cautelar si la investigación avanza con lentitud injustificada. La ley contempla control cuando la duración alcanza fracciones relevantes de la eventual pena y prohíbe mantenerla si deja de ser necesaria (Código Procesal Penal).</p>
+<p>La medida termina si se revoca, se sustituye, se dicta una resolución incompatible con su continuidad o concluye el proceso en condiciones que impiden mantenerla. Si después existe condena a una pena privativa de libertad, el tiempo efectivamente cumplido en prisión preventiva se considera para el cómputo en los términos legales. Ese abono no convierte la cautelar original en pena; evita duplicar el tiempo de privación de libertad (Código Penal y Código Procesal Penal).</p>
+<h2 id="apelar-no-es-repetir-toda-la-investigacion">Apelar no es repetir toda la investigación</h2>
+<p>Las decisiones sobre prisión preventiva pueden ser revisadas por una corte en los casos y formas establecidos por el Código. El tribunal superior examina la resolución impugnada y los antecedentes pertinentes, pero no realiza el juicio oral ni decide todavía la culpabilidad definitiva.</p>
+<p>Una corte puede confirmar, revocar o modificar la cautelar. Ese resultado se refiere a la necesidad y legalidad de la medida en ese momento. No es una sentencia sobre el fondo del delito.</p>
+<p>Los cambios tampoco prueban necesariamente arbitrariedad. Un tribunal superior puede interpretar de otra forma la suficiencia de los antecedentes, y una revisión posterior puede incorporar información que antes no existía. Para comparar resoluciones es indispensable atender a la fecha y al material que cada tribunal tuvo a la vista.</p>
+<h2 id="la-prision-preventiva-y-la-opinion-publica">La prisión preventiva y la opinión pública</h2>
+<p>Los casos graves producen una demanda comprensible de protección. Sin embargo, convertir la prisión preventiva en una respuesta simbólica a la indignación genera dos problemas. Puede castigar anticipadamente a quien aún no ha sido condenado y puede debilitar la investigación si el debate se concentra en la dureza aparente de la medida en lugar de la calidad de la prueba.</p>
+<p>El extremo contrario también es equivocado. La excepcionalidad no obliga a ignorar riesgos serios y acreditados. Cuando hay antecedentes suficientes y otras cautelares no protegen el proceso, a la víctima o a la sociedad, el ordenamiento permite el encierro preventivo.</p>
+<p>La calidad de la decisión se mide por su razonamiento: qué antecedentes sostienen la existencia del delito y la participación, qué riesgo específico se identifica, por qué ese riesgo es actual y por qué las alternativas resultan insuficientes. El nombre del imputado o la repercusión del caso no deberían cambiar esa estructura.</p>
+<h2 id="como-leer-una-noticia-sobre-cautelares">Cómo leer una noticia sobre cautelares</h2>
+<p>Conviene separar cinco datos. Primero, qué hechos fueron formalizados y con qué calificación jurídica provisional. Segundo, qué antecedentes mencionó quien pidió la cautelar. Tercero, cuál fue el riesgo aceptado por el juez. Cuarto, por qué se descartaron medidas menos intensas. Quinto, qué plazo de investigación se fijó y qué recursos o revisiones pueden seguir.</p>
+<p>También hay que distinguir entre lo que la Fiscalía afirma, lo que la defensa admite o niega y lo que el tribunal tiene por suficiente para una cautelar. Una admisión parcial no equivale necesariamente a reconocer todos los delitos imputados. Una resolución de prisión preventiva tampoco transforma cada afirmación de la acusación en un hecho probado.</p>
+<p>Finalmente, las expresiones &quot;quedó preso&quot; y &quot;fue enviado a prisión&quot; pueden ser descriptivas, pero esconden la diferencia más importante. Si se trata de prisión preventiva, la persona está sometida a una cautelar mientras se investiga o juzga. Si se trata de cumplimiento de pena, existe una sentencia condenatoria ejecutable.</p>
+<h2 id="aplicado-al-caso-de-hoy-12-de-septiembre-de-2026">Aplicado al caso de hoy - 12 de septiembre de 2026</h2>
+<p>Según el informe diario, el tribunal decretó prisión preventiva para Vinko Fodich y otros dos imputados el 11 de septiembre de 2026. La Fiscalía atribuyó asociación criminal, secuestro extorsivo y otros ilícitos, mientras la defensa de Fodich reconoció una vinculación puntual con hechos investigados y negó que integrara un secuestro (Informe diario de Entender Chile, 12 sep 2026).</p>
+<p>La lectura jurídicamente correcta es limitada pero precisa. El tribunal consideró satisfechos los requisitos cautelares necesarios para ordenar la medida en esa etapa. Eso no establece todavía la culpabilidad, no elimina la discusión sobre la participación atribuida y no anticipa el resultado de un juicio.</p>
+<p>Al 12 de septiembre de 2026 debía fijarse o conocerse el plazo de investigación, y las defensas podían aportar nuevos antecedentes o recurrir según las reglas aplicables. La persistencia de la prisión preventiva dependería de que siguieran presentes sus fundamentos, no únicamente de que hubiera sido decretada una vez (Poder Judicial y medios presentes en la audiencia, 11 sep 2026; Informe diario de Entender Chile, 12 sep 2026).</p>
+<p>Análisis: en una causa con antiguos funcionarios públicos o policiales, la posición previa de los imputados puede ser relevante si se conecta con capacidad de interferir, acceso a información o redes concretas. No debe operar como agravante automática ni como sustituto de antecedentes. La resolución debe explicar esa conexión para que el control sea comprensible.</p>
+<h2 id="que-conviene-recordar">Qué conviene recordar</h2>
+<ol>
+<li>La prisión preventiva es una medida cautelar anterior a la sentencia, no una pena anticipada.</li>
+<li>Requiere antecedentes sobre el delito y la participación, además de una necesidad cautelar que otras medidas no controlen suficientemente.</li>
+<li>La solicita la Fiscalía o el querellante y la decide un tribunal después de escuchar a las partes.</li>
+<li>Estar formalizado o en prisión preventiva no equivale a estar condenado; la presunción de inocencia sigue vigente.</li>
+<li>La cautelar debe revisarse y terminar o sustituirse cuando desaparecen sus fundamentos o se vuelve desproporcionada.</li>
+</ol>
+<h2 id="que-observar-en-esta-discusion-septiembre-de-2026">Qué observar en esta discusión - septiembre de 2026</h2>
+<p>Conviene observar qué riesgo cautelar fundamentó la resolución, qué plazo de investigación fijó el tribunal, si las defensas recurren y si aparecen antecedentes que justifiquen mantener o sustituir la medida. Para no confundir etapas, cualquier novedad debe leerse preguntando si se refiere a la cautelar, al avance de la investigación, a una acusación o a una sentencia.</p>
+<h2 id="fuentes">Fuentes</h2>
+<ul>
+<li>Código Procesal Penal, Ley 19.696, artículos 4, 122, 139, 140, 144, 145, 152, 155, 229 y 340, texto vigente consultado en la Biblioteca del Congreso Nacional.</li>
+<li>Código Penal, reglas de abono del tiempo de privación cautelar de libertad, texto vigente consultado en la Biblioteca del Congreso Nacional.</li>
+<li>Ministerio Público, material institucional sobre formalización, medidas cautelares y proceso penal.</li>
+<li>Entender Chile, Informe diario del 12 de septiembre de 2026.</li>
+</ul>
+</div> <nav class="nav-dias"> <span><a href="/entender-chile-web/claves/disciplina-remocion-jueces-chile/"><span class="kicker gris">← Clave anterior</span>Disciplina y remoción de jueces en Chile: quién controla su conducta sin decidir sus sentencias</a></span> <span style="text-align:right"><a href="/entender-chile-web/claves/investigacion-catastrofes-responsabilidades/"><span class="kicker gris">Clave siguiente →</span>Después de una catástrofe: cómo se determinan causas y responsabilidades</a></span> </nav> </div> </div> </article> </main> <script>
+      // Selector de diseño: aplica, recuerda y marca el botón activo.
+      (function () {
+        var raiz = document.documentElement;
+        var botones = document.querySelectorAll(".selector-diseno button");
+        function pintar(d) {
+          botones.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.d === d)); });
+        }
+        var actual = raiz.getAttribute("data-diseno") || "1";
+        pintar(actual);
+        botones.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = b.dataset.d;
+            if (d === "1") raiz.removeAttribute("data-diseno");
+            else raiz.setAttribute("data-diseno", d);
+            try { localStorage.setItem("ec-diseno", d); } catch (e) {}
+            pintar(d);
+          });
+        });
+      })();
+    </script> <script>
+      // "Para salir hoy" solo tiene sentido la mañana del mismo día (hora de Chile).
+      (function () {
+        try {
+          var els = document.querySelectorAll(".salir[data-fecha]");
+          if (!els.length) return;
+          var ahora = new Date();
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(ahora);
+          var h = parseInt(new Intl.DateTimeFormat("en-GB", { timeZone: "America/Santiago", hour: "2-digit", hour12: false }).format(ahora), 10);
+          els.forEach(function (el) { if (el.getAttribute("data-fecha") === f && h >= 5 && h < 13) el.hidden = false; });
+        } catch (e) {}
+      })();
+      // Señal de frescura: "Edición de hoy" / "de ayer" / "última edición".
+      (function () {
+        try {
+          var el = document.querySelector(".hoy[data-fecha]");
+          if (!el) return;
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+          var dias = Math.round((Date.parse(f + "T12:00:00Z") - Date.parse(el.getAttribute("data-fecha") + "T12:00:00Z")) / 86400000);
+          el.textContent = dias <= 0 ? "Edición de hoy" : dias === 1 ? "Edición de ayer" : "Última edición";
+          el.hidden = false;
+        } catch (e) {}
+      })();
+    </script> <script>
+      // Índice lateral: marca la sección visible mientras se baja y, en móvil,
+      // muestra su nombre en la barra pegada arriba.
+      (function () {
+        var ind = document.querySelector(".indice");
+        if (!ind) return;
+        var det = ind.querySelector("details");
+        var etiqueta = ind.querySelector(".indice-actual");
+        var movil = window.matchMedia("(max-width: 959px)");
+        function modo() { if (det) det.open = !movil.matches; }
+        modo(); movil.addEventListener ? movil.addEventListener("change", modo) : movil.addListener(modo);
+        var metas = [];
+        ind.querySelectorAll("a[href^='#']").forEach(function (a) {
+          var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+          if (el) metas.push({ a: a, el: el });
+        });
+        var actual = null, pedido = false;
+        function medir() {
+          pedido = false;
+          var y = window.scrollY + (movil.matches ? 120 : 140), m = null;
+          for (var i = 0; i < metas.length; i++) {
+            if (metas[i].el.getBoundingClientRect().top + window.scrollY <= y) m = metas[i]; else break;
+          }
+          if (m === actual) return;
+          actual = m;
+          metas.forEach(function (x) { x.a.removeAttribute("aria-current"); });
+          if (m) {
+            m.a.setAttribute("aria-current", "true");
+            if (etiqueta) etiqueta.textContent = m.a.textContent;
+            if (!movil.matches) {
+              var r = m.a.getBoundingClientRect(), c = ind.getBoundingClientRect();
+              if (r.top < c.top || r.bottom > c.bottom) ind.scrollTop += r.top - c.top - c.height / 2;
+            }
+          } else if (etiqueta) etiqueta.textContent = "";
+        }
+        window.addEventListener("scroll", function () { if (!pedido) { pedido = true; requestAnimationFrame(medir); } }, { passive: true });
+        window.addEventListener("resize", medir);
+        ind.addEventListener("click", function (e) { if (e.target.closest("a") && movil.matches && det) det.open = false; });
+        medir();
+      })();
+      // "En una mirada": una frase a la vez, que cambia sola cada pocos segundos.
+      // Se detiene al pasar el mouse o al enfocar; respeta "reducir movimiento".
+      (function () {
+        var quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        document.querySelectorAll(".mirada-rot").forEach(function (rot) {
+          var items = [].slice.call(rot.querySelectorAll(".mirada > li"));
+          if (items.length < 2) return;
+          rot.classList.add("activo");
+          var ms = parseInt(rot.getAttribute("data-ms") || "7000", 10), k = 0, timer = null;
+          var puntos = rot.querySelector(".mirada-puntos"), cuenta = rot.querySelector(".mirada-cuenta");
+          var botones = items.map(function (_, i) {
+            var b = document.createElement("button"); b.type = "button";
+            b.setAttribute("aria-label", "Frase " + (i + 1) + " de " + items.length);
+            b.addEventListener("click", function () { ir(i); reiniciar(); });
+            if (puntos) puntos.appendChild(b);
+            return b;
+          });
+          function ir(n) {
+            k = (n + items.length) % items.length;
+            items.forEach(function (li, i) {
+              if (i === k) { li.setAttribute("aria-current", "true"); li.removeAttribute("aria-hidden"); }
+              else { li.removeAttribute("aria-current"); li.setAttribute("aria-hidden", "true"); }
+            });
+            botones.forEach(function (b, i) { b.setAttribute("aria-pressed", String(i === k)); });
+            if (cuenta) cuenta.textContent = (k + 1) + " / " + items.length;
+            var barra = rot.querySelector(".mirada-barra");
+            if (barra) barra.replaceWith(barra.cloneNode(true));
+          }
+          function parar() { clearInterval(timer); timer = null; rot.classList.add("pausa"); }
+          function reiniciar() { clearInterval(timer); rot.classList.remove("pausa"); if (!quieto && !document.hidden) timer = setInterval(function () { ir(k + 1); }, ms); }
+          var prev = rot.querySelector(".mirada-prev"), next = rot.querySelector(".mirada-next");
+          if (prev) prev.addEventListener("click", function () { ir(k - 1); reiniciar(); });
+          if (next) next.addEventListener("click", function () { ir(k + 1); reiniciar(); });
+          rot.addEventListener("mouseenter", parar); rot.addEventListener("mouseleave", reiniciar);
+          rot.addEventListener("focusin", parar); rot.addEventListener("focusout", reiniciar);
+          document.addEventListener("visibilitychange", function () { document.hidden ? parar() : reiniciar(); });
+          if (quieto) rot.classList.add("quieto");
+          ir(0); reiniciar();
+        });
+      })();
+    </script> <footer> <div class="in"> <span>Entender Chile · El resumen sin gritos. Hecho en Chile; cada cifra con su fuente.</span> <span><a href="/entender-chile-web/privacidad/">Privacidad</a> · <a href="/entender-chile-web/terminos/">Términos</a></span> <span class="mono">Actualizado 13-09-2026</span> </div> </footer> </body></html>

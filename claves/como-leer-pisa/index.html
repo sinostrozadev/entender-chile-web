@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="es"> <head><script>
+      // Diseño elegido por el visitante (1 revista, 2 diario). Se aplica antes
+      // de pintar para que no haya parpadeo. ?diseno=2 en la URL lo fija (sirve
+      // para compartir un enlace "míralo en el diseño 2").
+      (function () {
+        try {
+          var q = (location.search.match(/[?&]diseno=([12])/) || [])[1];
+          if (q) localStorage.setItem("ec-diseno", q);
+          var d = q || localStorage.getItem("ec-diseno");
+          if (d === "2") document.documentElement.setAttribute("data-diseno", "2");
+        } catch (e) {}
+      })();
+    </script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cómo leer PISA: qué miden los puntajes, qué significa un nivel de desempeño y qué no permite concluir · Entender Chile</title><meta name="description" content="Cuando PISA informa que un país obtuvo cierto puntaje o que una proporción de sus estudiantes no alcanzó un nivel básico, ¿qué se midió realmente, cómo se const"><meta property="og:title" content="Cómo leer PISA: qué miden los puntajes, qué significa un nivel de desempeño y qué no permite concluir · Entender Chile"><meta property="og:description" content="Cuando PISA informa que un país obtuvo cierto puntaje o que una proporción de sus estudiantes no alcanzó un nivel básico, ¿qué se midió realmente, cómo se const"><meta property="og:type" content="article"><link rel="icon" href="/entender-chile-web/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/entender-chile-web/_astro/acerca.B0jrjTxn.css"></head> <body> <header class="cab"> <a class="marca" href="/entender-chile-web/">Entender Chile</a> <span class="tagline">El resumen sin gritos</span> <span class="cab-fecha">Santiago de Chile · Domingo, 13 de septiembre de 2026</span> <nav> <a href="/entender-chile-web/informes/">Informes</a> <a href="/entender-chile-web/claves/" aria-current="page">Claves</a> <a href="/entender-chile-web/en-que-quedo/">¿En qué quedó?</a> <a href="/entender-chile-web/acerca/">Acerca</a> <a class="suscribe" href="https://www.youtube.com/@entenderchile" rel="noopener">Suscríbete</a> <a class="suscribe" href="https://open.spotify.com/show/2Ay5U3wUiQ0RaDbeakqGVp" rel="noopener">Podcast</a> <span class="selector-diseno" role="group" aria-label="Elegir diseño"> <span>Diseño</span> <button type="button" data-d="1" aria-pressed="true" title="Revista">1</button> <button type="button" data-d="2" aria-pressed="false" title="Diario">2</button> </span> </nav> </header> <nav class="nav-cat" aria-label="Categorías"> <a href="/entender-chile-web/categorias/economia/" style="--cat:#8A6F3F">Economía</a><a href="/entender-chile-web/categorias/seguridad/" style="--cat:#7A5560">Seguridad y justicia</a><a href="/entender-chile-web/categorias/politica/" style="--cat:#2F7263">Política</a><a href="/entender-chile-web/categorias/regiones/" style="--cat:#44546A">Chile en regiones</a><a href="/entender-chile-web/categorias/salud/" style="--cat:#37716A">Salud</a><a href="/entender-chile-web/categorias/educacion/" style="--cat:#5C5A82">Educación y ciencia</a><a href="/entender-chile-web/categorias/internacional/" style="--cat:#556B7A">Internacional</a><a href="/entender-chile-web/categorias/plata-publica/" style="--cat:#7A6248">Plata pública</a> </nav> <main> <article class="pieza"> <header class="cabecera"> <p class="kicker">Claves para entender las noticias</p> <h1>Cómo leer PISA: qué miden los puntajes, qué significa un nivel de desempeño y qué no permite concluir</h1> <p class="fecha">Miércoles, 9 de septiembre de 2026</p>  </header> <div class="con-indice"> <aside class="indice" aria-label="Índice"> <details open> <summary><span class="indice-titulo">En esta clave</span><span class="indice-actual" aria-live="polite"></span></summary> <nav> <ol> <li> <a href="#la-noticia-que-abrio-esta-pregunta-9-de-septiembre-de-2026">La noticia que abrió esta pregunta, 9 de septiembre de 2026</a>  </li><li> <a href="#la-pregunta-de-fondo">La pregunta de fondo</a>  </li><li> <a href="#que-es-pisa">Qué es PISA</a>  </li><li> <a href="#una-muestra-representa-al-sistema">Una muestra representa al sistema</a>  </li><li> <a href="#por-que-no-todos-responden-las-mismas-preguntas">Por qué no todos responden las mismas preguntas</a>  </li><li> <a href="#que-significa-un-puntaje">Qué significa un puntaje</a>  </li><li> <a href="#que-son-los-niveles-de-desempeno">Qué son los niveles de desempeño</a>  </li><li> <a href="#comparar-paises-sin-simplificar-en-exceso">Comparar países sin simplificar en exceso</a>  </li><li> <a href="#comparar-ciclos-a-traves-del-tiempo">Comparar ciclos a través del tiempo</a>  </li><li> <a href="#pisa-no-mide-todo-lo-que-importa">PISA no mide todo lo que importa</a>  </li><li> <a href="#promedio-equidad-y-oportunidades">Promedio, equidad y oportunidades</a>  </li><li> <a href="#que-significa-y-que-no-significa-estar-bajo-el-nivel-basico">Qué significa y qué no significa estar bajo el nivel básico</a>  </li><li> <a href="#como-evaluar-las-explicaciones-publicas">Cómo evaluar las explicaciones públicas</a>  </li><li> <a href="#aplicado-al-caso-de-hoy-9-de-septiembre-de-2026">Aplicado al caso de hoy, 9 de septiembre de 2026</a>  </li><li> <a href="#que-conviene-recordar">Qué conviene recordar</a>  </li><li> <a href="#que-observar-en-esta-discusion-septiembre-de-2026">Qué observar en esta discusión, septiembre de 2026</a>  </li> </ol> </nav> </details> </aside> <div class="col-cuerpo"> <div class="cuerpo"><h2 id="la-noticia-que-abrio-esta-pregunta-9-de-septiembre-de-2026">La noticia que abrió esta pregunta, 9 de septiembre de 2026</h2>
+<p>El Informe diario del 9 de septiembre de 2026 registró que el 59% de los estudiantes chilenos evaluados en PISA 2025 no alcanzó el nivel básico de desempeño en Matemáticas. Chile obtuvo 403 puntos, 60 menos que el promedio de la OCDE, y presentó retrocesos respecto de 2022 en Lectura y Matemáticas. La medición se aplicó a estudiantes de 15 años y fue publicada el 8 de septiembre de 2026 (Informe diario de Entender Chile, 9 sep 2026).</p>
+<h2 id="la-pregunta-de-fondo">La pregunta de fondo</h2>
+<p>Cuando PISA informa que un país obtuvo cierto puntaje o que una proporción de sus estudiantes no alcanzó un nivel básico, ¿qué se midió realmente, cómo se construye esa comparación y cuáles son las conclusiones legítimas sobre el aprendizaje y el sistema educativo?</p>
+<h2 id="que-es-pisa">Qué es PISA</h2>
+<p>PISA es el Programa para la Evaluación Internacional de Estudiantes de la Organización para la Cooperación y el Desarrollo Económicos. Evalúa periódicamente a estudiantes de alrededor de 15 años en Lectura, Matemáticas y Ciencias, además de dominios que pueden incorporarse en determinados ciclos. Su interés principal no es comprobar cuánto recuerdan de un currículo nacional específico, sino observar hasta qué punto pueden aplicar conocimientos y habilidades para comprender situaciones, razonar y resolver problemas (OCDE, marco PISA 2025).</p>
+<p>La edad común permite comparar a jóvenes que se encuentran cerca del final de la escolaridad obligatoria en muchos sistemas, aunque no todos cursan exactamente el mismo nivel. En un país pueden estar principalmente en un curso y en otro distribuirse entre varios. PISA compara una etapa vital semejante, no salas de clase idénticas.</p>
+<p>La evaluación no busca poner una nota individual a cada estudiante ni ordenar escuelas una por una. Su diseño produce estimaciones del desempeño de poblaciones y subgrupos. El dato relevante es lo que la muestra permite inferir sobre el conjunto definido, dentro de un margen de incertidumbre estadística.</p>
+<h2 id="una-muestra-representa-al-sistema">Una muestra representa al sistema</h2>
+<p>PISA no necesita evaluar a cada joven de 15 años. Selecciona establecimientos y estudiantes mediante procedimientos de muestreo destinados a representar a la población escolar elegible. Cada participante puede representar estadísticamente a muchas personas con características semejantes. Por eso, el resultado nacional no es un promedio simple de todas las respuestas recogidas sin ponderación.</p>
+<p>La calidad de la inferencia depende de que la muestra cubra adecuadamente la diversidad del sistema, que la participación sea suficiente y que se apliquen reglas comunes. Los informes técnicos documentan cobertura, exclusiones, tasas de respuesta y ponderaciones. Esos antecedentes permiten juzgar si una comparación es robusta (OCDE, documentación técnica PISA).</p>
+<p>Que se evalúe una muestra no vuelve al resultado una encuesta de opinión. Los estudiantes resuelven tareas estandarizadas bajo un diseño internacional. Sin embargo, toda estimación muestral tiene error. Dos puntajes cercanos pueden no representar una diferencia estadísticamente significativa. Por eso, una tabla de posiciones sin intervalos de confianza puede exagerar diferencias pequeñas.</p>
+<h2 id="por-que-no-todos-responden-las-mismas-preguntas">Por qué no todos responden las mismas preguntas</h2>
+<p>El universo de tareas de PISA es mayor que lo que una persona podría contestar razonablemente. La evaluación distribuye distintos conjuntos de preguntas entre los estudiantes. Un participante responde sólo una parte, mientras el modelo estadístico combina la información de toda la muestra.</p>
+<p>Esto significa que PISA no calcula el desempeño como una prueba escolar convencional en la que cada alumno responde el mismo cuestionario y recibe un porcentaje de respuestas correctas. Utiliza modelos de medición para situar las habilidades de la población y la dificultad de las tareas en una escala común. En las bases de datos se emplean valores plausibles para representar la incertidumbre sobre el desempeño, no una nota individual exacta (OCDE, documentación técnica PISA).</p>
+<p>La escala permite comparar distribuciones, promedios y niveles de desempeño. Su sofisticación no elimina la incertidumbre. Al contrario, obliga a comunicarla correctamente y a evitar que un número nacional se trate como si fuera una medición perfecta.</p>
+<h2 id="que-significa-un-puntaje">Qué significa un puntaje</h2>
+<p>Un puntaje PISA ubica el desempeño estimado en una escala construida para el dominio evaluado. No es un porcentaje de respuestas correctas ni se interpreta como una calificación chilena. La diferencia entre 403 y otro valor debe analizarse dentro de la escala, junto con sus errores estándar, los niveles de desempeño y la distribución de estudiantes.</p>
+<p>El promedio nacional resume una distribución amplia. Dos países pueden obtener una media similar y tener realidades distintas. Uno podría concentrar a la mayoría cerca del promedio, mientras otro combina grupos con resultados muy altos y muy bajos. Para comprender el sistema hay que mirar también los percentiles, la proporción bajo los niveles básicos, los estudiantes de alto desempeño y las brechas socioeconómicas, territoriales y de género.</p>
+<p>La posición en un ranking es secundaria frente a esas diferencias. Si varios países tienen resultados estadísticamente indistinguibles, asignarles puestos consecutivos crea una precisión que los datos no sostienen. Además, la lista cambia según qué participantes se incluyan y qué criterio se ordene.</p>
+<h2 id="que-son-los-niveles-de-desempeno">Qué son los niveles de desempeño</h2>
+<p>Los niveles agrupan rangos de la escala y describen tipos de tareas que estudiantes con determinado desempeño suelen poder resolver. No son etiquetas permanentes sobre la inteligencia ni un diagnóstico clínico. Sirven para traducir una escala abstracta a capacidades observables.</p>
+<p>En Matemáticas, alcanzar al menos el nivel básico significa demostrar competencias mínimas definidas por el marco para usar razonamiento matemático en situaciones pertinentes. Estar bajo ese umbral indica que, en la evaluación, el estudiante no mostró de manera consistente esas capacidades. No significa que no pueda resolver ninguna operación, que jamás haya aprendido matemáticas ni que su trayectoria futura esté decidida.</p>
+<p>Cuando se afirma que un porcentaje no alcanzó el nivel básico, se habla de una proporción estimada de la población representada por la muestra. El indicador muestra la extensión de una dificultad de aprendizaje. No identifica por sí solo la causa ni dice que todos los estudiantes bajo el umbral tengan las mismas carencias.</p>
+<p>Los niveles son especialmente útiles porque dos países con el mismo promedio pueden diferir en cuántos jóvenes quedan rezagados. Una política educativa puede proponerse elevar la media, reducir la proporción bajo el mínimo, aumentar el grupo de desempeño avanzado o cerrar brechas. Son objetivos relacionados, pero no idénticos.</p>
+<h2 id="comparar-paises-sin-simplificar-en-exceso">Comparar países sin simplificar en exceso</h2>
+<p>La comparación internacional es valiosa porque obliga a mirar el desempeño con una regla común. Permite observar sistemas que logran mejores resultados o mayor equidad y formular preguntas sobre sus políticas. No demuestra automáticamente que una característica visible de un país haya causado su puntaje.</p>
+<p>Los sistemas difieren en ingreso, desigualdad, composición demográfica, edades de ingreso escolar, cobertura, repetición, selección entre establecimientos, idioma, asistencia y efectos de crisis. PISA incorpora cuestionarios de contexto y análisis que ayudan a examinar asociaciones, pero una asociación no prueba causalidad.</p>
+<p>Si un país con determinada política obtiene buenos resultados, todavía hay que investigar si esa política produjo el resultado, si operó junto a otras condiciones o si ambos fenómenos responden a causas comunes. PISA permite identificar patrones y generar hipótesis. Para decidir qué intervención funciona se necesitan además estudios de implementación, series temporales, evaluaciones causales y evidencia local.</p>
+<p>La comparación tampoco debe usarse para afirmar que una cultura es superior. Los instrumentos pasan por procesos de traducción y adaptación, pero ninguna medición elimina por completo las diferencias culturales y lingüísticas. La respuesta responsable es revisar los controles técnicos y combinar el dato con otras evidencias, no descartar toda comparación ni aceptar cualquier ranking sin crítica.</p>
+<h2 id="comparar-ciclos-a-traves-del-tiempo">Comparar ciclos a través del tiempo</h2>
+<p>Una variación entre dos ciclos puede reflejar cambios reales en aprendizaje, pero debe interpretarse con su incertidumbre y con el contexto. La comparabilidad depende de que las escalas se enlacen técnicamente y de que las poblaciones representadas sean equivalentes.</p>
+<p>Cambios en asistencia escolar, cobertura, exclusiones o composición de la matrícula pueden mover el resultado. Una crisis prolongada puede afectar oportunidades de aprendizaje, bienestar y participación. Nada de esto invalida automáticamente la comparación, pero modifica la explicación que puede darse.</p>
+<p>No conviene atribuir el cambio observado a una sola administración. Los estudiantes de 15 años acumulan experiencias desde la primera infancia, el hogar y muchos años de escolaridad. Un resultado publicado durante un gobierno recoge decisiones y condiciones de periodos distintos. Algunas políticas pueden producir efectos rápidos, mientras otras tardan años.</p>
+<p>Tampoco basta observar una caída de un ciclo para declarar una tendencia irreversible. Una tendencia requiere varios puntos comparables y análisis de largo plazo. Un cambio importante merece atención inmediata, pero su significado mejora al examinar la trayectoria completa.</p>
+<h2 id="pisa-no-mide-todo-lo-que-importa">PISA no mide todo lo que importa</h2>
+<p>La evaluación cubre capacidades relevantes, pero no agota los fines de la educación. No mide de manera completa formación ciudadana, desarrollo emocional, creatividad, convivencia, artes, salud, valores, conocimientos locales ni todas las habilidades profesionales.</p>
+<p>Un sistema podría mejorar puntajes y descuidar otros objetivos. También podría fortalecer aspectos importantes que PISA no capta y no verlos reflejados en la escala. La prueba debe entenderse como una pieza de un tablero más amplio.</p>
+<p>PISA tampoco reemplaza evaluaciones curriculares nacionales. Una prueba vinculada al currículo puede indicar qué contenidos enseñados dominan los estudiantes. PISA pregunta con una perspectiva internacional y de aplicación. Ambas fuentes pueden coincidir o mostrar dimensiones diferentes.</p>
+<p>Las decisiones sobre escuelas concretas necesitan información más cercana. El resultado nacional no permite diagnosticar a un curso, profesor o establecimiento particular. Para ello se requieren evaluaciones locales, observación pedagógica, asistencia, contexto y seguimiento de estudiantes.</p>
+<h2 id="promedio-equidad-y-oportunidades">Promedio, equidad y oportunidades</h2>
+<p>Una lectura completa separa al menos tres preguntas. La primera es cuánto saben y pueden hacer, resumido por puntajes y niveles. La segunda es cómo se distribuye ese aprendizaje. La tercera es cuánto depende el desempeño del origen social y de las oportunidades disponibles.</p>
+<p>Un promedio puede mejorar mientras las brechas crecen si el avance se concentra en los grupos más favorecidos. También puede mantenerse estable mientras disminuyen diferencias internas. Por eso, la equidad no se deduce del promedio.</p>
+<p>PISA permite relacionar resultados con indicadores socioeconómicos, género, condición migratoria y otras variables. Esas asociaciones ayudan a detectar grupos con menos oportunidades. No deben convertirse en destinos inevitables para individuos. Que una condición esté asociada estadísticamente con menor desempeño no significa que determine a cada estudiante.</p>
+<p>La resiliencia académica, entendida como buenos resultados entre jóvenes en desventaja, puede mostrar que el origen no fija completamente el aprendizaje. Estudiar dónde ocurre y qué condiciones lo acompañan aporta más que usar el nivel socioeconómico como explicación final.</p>
+<h2 id="que-significa-y-que-no-significa-estar-bajo-el-nivel-basico">Qué significa y qué no significa estar bajo el nivel básico</h2>
+<p>Sí significa que una proporción relevante de estudiantes no demostró consistentemente las competencias que el marco define como piso funcional en el dominio evaluado. Cuando esa proporción es alta, el sistema enfrenta un problema de aprendizaje que puede limitar estudios posteriores, inserción laboral y participación cotidiana.</p>
+<p>No significa que el mismo porcentaje sea incapaz de aprender. PISA describe desempeño en un momento y bajo ciertas tareas. Las habilidades pueden desarrollarse con enseñanza, apoyo y práctica.</p>
+<p>No significa que todas las escuelas hayan obtenido ese resultado. Un promedio nacional mezcla establecimientos y contextos distintos. Tampoco significa que cada estudiante bajo el umbral tenga idénticas necesidades.</p>
+<p>No permite concluir por sí solo qué política debe aplicarse. Puede orientar prioridades, pero las respuestas exigen diagnosticar contenidos, prácticas docentes, asistencia, clima escolar, apoyos familiares y desigualdades de recursos.</p>
+<h2 id="como-evaluar-las-explicaciones-publicas">Cómo evaluar las explicaciones públicas</h2>
+<p>Ante un resultado débil, las autoridades y actores políticos suelen proponer causas rápidamente. Una explicación seria debería especificar el mecanismo y la evidencia. Decir que la pandemia influyó, por ejemplo, requiere analizar pérdida de presencialidad, recuperación, asistencia y diferencias entre grupos, no sólo señalar una coincidencia temporal.</p>
+<p>También debe distinguir factores acumulados de decisiones recientes. Los aprendizajes de un joven de 15 años reflejan una trayectoria extensa. Una política implementada poco antes de la prueba difícilmente explica por sí sola todo el resultado.</p>
+<p>Conviene desconfiar de comparaciones que usan sólo el promedio de la OCDE como frontera entre éxito y fracaso. Ese promedio es una referencia, no una meta educativa completa. Un país puede acercarse a él y conservar brechas profundas, o mantenerse por debajo mientras mejora de forma sostenida.</p>
+<p>La explicación más útil combina PISA con otras fuentes: evaluaciones nacionales, asistencia, trayectorias escolares, encuestas de contexto, evidencia docente y estudios de políticas. Cuando varias mediciones independientes apuntan en la misma dirección, el diagnóstico gana fuerza.</p>
+<h2 id="aplicado-al-caso-de-hoy-9-de-septiembre-de-2026">Aplicado al caso de hoy, 9 de septiembre de 2026</h2>
+<p>El Informe diario señaló que el 59% de los estudiantes chilenos evaluados en PISA 2025 no alcanzó el nivel básico en Matemáticas, que Chile obtuvo 403 puntos y que la diferencia frente al promedio de la OCDE fue de 60 puntos. También registró retrocesos frente a 2022, de 12 puntos en Lectura y nueve en Matemáticas (Informe diario de Entender Chile, 9 sep 2026).</p>
+<p>La interpretación correcta no es que seis de cada diez jóvenes chilenos sean incapaces de hacer matemáticas. El dato indica que una proporción estimada cercana a seis de cada diez no demostró de forma consistente las competencias matemáticas mínimas descritas por PISA para ese nivel. Es una señal sistémica grave porque el problema alcanza a una parte mayoritaria de la población evaluada, pero no es una sentencia individual.</p>
+<p>Los 403 puntos no equivalen a 40,3% de logro ni a una nota escolar. Ubican el promedio chileno en la escala internacional. La diferencia de 60 puntos con la media de la OCDE aporta una referencia, pero debe complementarse con la distribución por niveles, la incertidumbre estadística y las brechas internas.</p>
+<p>Análisis: la prioridad pública no debería agotarse en recuperar puestos de un ranking. Los datos plantean al menos dos objetivos distintos, reducir la proporción bajo el nivel básico y mejorar el aprendizaje del conjunto sin ampliar desigualdades. Para escoger políticas será necesario conectar PISA con evidencia nacional sobre asistencia, prácticas de enseñanza, recuperación de aprendizajes y diferencias entre grupos.</p>
+<h2 id="que-conviene-recordar">Qué conviene recordar</h2>
+<ol>
+<li>PISA evalúa la capacidad de estudiantes de 15 años para aplicar conocimientos, no la memorización completa de un currículo nacional.</li>
+<li>Un puntaje PISA no es un porcentaje ni una nota escolar, y diferencias pequeñas deben leerse con su incertidumbre estadística.</li>
+<li>Los niveles describen tareas que los estudiantes suelen poder resolver, no capacidades fijas ni destinos individuales.</li>
+<li>El promedio nacional puede ocultar brechas, por lo que también deben examinarse la distribución y la proporción bajo el nivel básico.</li>
+<li>PISA identifica resultados y asociaciones, pero no demuestra por sí sola qué política o gobierno causó el desempeño observado.</li>
+</ol>
+<h2 id="que-observar-en-esta-discusion-septiembre-de-2026">Qué observar en esta discusión, septiembre de 2026</h2>
+<p>Conviene revisar el informe técnico completo de Chile, sus intervalos de confianza, cobertura de la muestra, resultados por nivel, brechas socioeconómicas y comparación con varios ciclos. Las medidas anunciadas después del 9 de septiembre de 2026 deberán evaluarse por su diseño, implementación y resultados posteriores, no sólo por su reacción al titular inicial.</p>
+<p>Fuentes:
+Organización para la Cooperación y el Desarrollo Económicos, marco de evaluación PISA 2025.
+Organización para la Cooperación y el Desarrollo Económicos, documentación técnica y resultados PISA 2025, consultados el 9 de septiembre de 2026.
+Agencia de Calidad de la Educación, descripción de PISA y resultados de Chile, 8 de septiembre de 2026.
+Informe diario de Entender Chile, 9 de septiembre de 2026.</p>
+</div> <nav class="nav-dias"> <span><a href="/entender-chile-web/claves/interpelacion-ministerial-chile/"><span class="kicker gris">← Clave anterior</span>Interpelación ministerial en Chile: cómo la Cámara exige respuestas al Gobierno y cuáles son sus límites</a></span> <span style="text-align:right"><a href="/entender-chile-web/claves/como-leer-ipom/"><span class="kicker gris">Clave siguiente →</span>Cómo leer el IPoM: proyecciones, supuestos y riesgos detrás de las decisiones del Banco Central</a></span> </nav> </div> </div> </article> </main> <script>
+      // Selector de diseño: aplica, recuerda y marca el botón activo.
+      (function () {
+        var raiz = document.documentElement;
+        var botones = document.querySelectorAll(".selector-diseno button");
+        function pintar(d) {
+          botones.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.d === d)); });
+        }
+        var actual = raiz.getAttribute("data-diseno") || "1";
+        pintar(actual);
+        botones.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var d = b.dataset.d;
+            if (d === "1") raiz.removeAttribute("data-diseno");
+            else raiz.setAttribute("data-diseno", d);
+            try { localStorage.setItem("ec-diseno", d); } catch (e) {}
+            pintar(d);
+          });
+        });
+      })();
+    </script> <script>
+      // "Para salir hoy" solo tiene sentido la mañana del mismo día (hora de Chile).
+      (function () {
+        try {
+          var els = document.querySelectorAll(".salir[data-fecha]");
+          if (!els.length) return;
+          var ahora = new Date();
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(ahora);
+          var h = parseInt(new Intl.DateTimeFormat("en-GB", { timeZone: "America/Santiago", hour: "2-digit", hour12: false }).format(ahora), 10);
+          els.forEach(function (el) { if (el.getAttribute("data-fecha") === f && h >= 5 && h < 13) el.hidden = false; });
+        } catch (e) {}
+      })();
+      // Señal de frescura: "Edición de hoy" / "de ayer" / "última edición".
+      (function () {
+        try {
+          var el = document.querySelector(".hoy[data-fecha]");
+          if (!el) return;
+          var f = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Santiago", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+          var dias = Math.round((Date.parse(f + "T12:00:00Z") - Date.parse(el.getAttribute("data-fecha") + "T12:00:00Z")) / 86400000);
+          el.textContent = dias <= 0 ? "Edición de hoy" : dias === 1 ? "Edición de ayer" : "Última edición";
+          el.hidden = false;
+        } catch (e) {}
+      })();
+    </script> <script>
+      // Índice lateral: marca la sección visible mientras se baja y, en móvil,
+      // muestra su nombre en la barra pegada arriba.
+      (function () {
+        var ind = document.querySelector(".indice");
+        if (!ind) return;
+        var det = ind.querySelector("details");
+        var etiqueta = ind.querySelector(".indice-actual");
+        var movil = window.matchMedia("(max-width: 959px)");
+        function modo() { if (det) det.open = !movil.matches; }
+        modo(); movil.addEventListener ? movil.addEventListener("change", modo) : movil.addListener(modo);
+        var metas = [];
+        ind.querySelectorAll("a[href^='#']").forEach(function (a) {
+          var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+          if (el) metas.push({ a: a, el: el });
+        });
+        var actual = null, pedido = false;
+        function medir() {
+          pedido = false;
+          var y = window.scrollY + (movil.matches ? 120 : 140), m = null;
+          for (var i = 0; i < metas.length; i++) {
+            if (metas[i].el.getBoundingClientRect().top + window.scrollY <= y) m = metas[i]; else break;
+          }
+          if (m === actual) return;
+          actual = m;
+          metas.forEach(function (x) { x.a.removeAttribute("aria-current"); });
+          if (m) {
+            m.a.setAttribute("aria-current", "true");
+            if (etiqueta) etiqueta.textContent = m.a.textContent;
+            if (!movil.matches) {
+              var r = m.a.getBoundingClientRect(), c = ind.getBoundingClientRect();
+              if (r.top < c.top || r.bottom > c.bottom) ind.scrollTop += r.top - c.top - c.height / 2;
+            }
+          } else if (etiqueta) etiqueta.textContent = "";
+        }
+        window.addEventListener("scroll", function () { if (!pedido) { pedido = true; requestAnimationFrame(medir); } }, { passive: true });
+        window.addEventListener("resize", medir);
+        ind.addEventListener("click", function (e) { if (e.target.closest("a") && movil.matches && det) det.open = false; });
+        medir();
+      })();
+      // "En una mirada": una frase a la vez, que cambia sola cada pocos segundos.
+      // Se detiene al pasar el mouse o al enfocar; respeta "reducir movimiento".
+      (function () {
+        var quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        document.querySelectorAll(".mirada-rot").forEach(function (rot) {
+          var items = [].slice.call(rot.querySelectorAll(".mirada > li"));
+          if (items.length < 2) return;
+          rot.classList.add("activo");
+          var ms = parseInt(rot.getAttribute("data-ms") || "7000", 10), k = 0, timer = null;
+          var puntos = rot.querySelector(".mirada-puntos"), cuenta = rot.querySelector(".mirada-cuenta");
+          var botones = items.map(function (_, i) {
+            var b = document.createElement("button"); b.type = "button";
+            b.setAttribute("aria-label", "Frase " + (i + 1) + " de " + items.length);
+            b.addEventListener("click", function () { ir(i); reiniciar(); });
+            if (puntos) puntos.appendChild(b);
+            return b;
+          });
+          function ir(n) {
+            k = (n + items.length) % items.length;
+            items.forEach(function (li, i) {
+              if (i === k) { li.setAttribute("aria-current", "true"); li.removeAttribute("aria-hidden"); }
+              else { li.removeAttribute("aria-current"); li.setAttribute("aria-hidden", "true"); }
+            });
+            botones.forEach(function (b, i) { b.setAttribute("aria-pressed", String(i === k)); });
+            if (cuenta) cuenta.textContent = (k + 1) + " / " + items.length;
+            var barra = rot.querySelector(".mirada-barra");
+            if (barra) barra.replaceWith(barra.cloneNode(true));
+          }
+          function parar() { clearInterval(timer); timer = null; rot.classList.add("pausa"); }
+          function reiniciar() { clearInterval(timer); rot.classList.remove("pausa"); if (!quieto && !document.hidden) timer = setInterval(function () { ir(k + 1); }, ms); }
+          var prev = rot.querySelector(".mirada-prev"), next = rot.querySelector(".mirada-next");
+          if (prev) prev.addEventListener("click", function () { ir(k - 1); reiniciar(); });
+          if (next) next.addEventListener("click", function () { ir(k + 1); reiniciar(); });
+          rot.addEventListener("mouseenter", parar); rot.addEventListener("mouseleave", reiniciar);
+          rot.addEventListener("focusin", parar); rot.addEventListener("focusout", reiniciar);
+          document.addEventListener("visibilitychange", function () { document.hidden ? parar() : reiniciar(); });
+          if (quieto) rot.classList.add("quieto");
+          ir(0); reiniciar();
+        });
+      })();
+    </script> <footer> <div class="in"> <span>Entender Chile · El resumen sin gritos. Hecho en Chile; cada cifra con su fuente.</span> <span><a href="/entender-chile-web/privacidad/">Privacidad</a> · <a href="/entender-chile-web/terminos/">Términos</a></span> <span class="mono">Actualizado 13-09-2026</span> </div> </footer> </body></html>
